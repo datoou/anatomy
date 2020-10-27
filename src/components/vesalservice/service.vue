@@ -1,38 +1,38 @@
 <template>
     <div class="vesalService">
         <div class="top">
-            <img class="reveal-top"  src="../vesalservice/img/guanyuwomen.png">
-            <a class="reveal-top" href="" style="text-decoration: none">查看更多</a>
+            <img class="reveal-top"  src="../vesalservice/img/guanyuwomen.png" style="width: 20vw;height: auto">
+            <a class="reveal-top" href="" style="text-decoration: none;font-size: 1vw">查看更多</a>
         </div>
 
         <div class="serviceContent" >
             <div class="dingzhi">
                 <img src="../vesalservice/img/qiyefuwu.png"
                      class="reveal-top"
-                     style="width: 163px;height: 50px">
+                     style="width: 8.5vw;height: 2.6vw">
                 <div class="dingzhiContent">
                     <div class="left">
                         <img class="reveal-top"
-                                src="../vesalservice/img/jirou.png">
-                        <div style="width: 282px;height: 78px;justify-content:space-between;display: flex;flex-direction: column;align-items: center">
+                                src="../vesalservice/img/jirou.png" style="width: 14.6875vw;height: 21.77vw">
+                        <div style="width: 282px;height: 78px;justify-content:space-between;display: flex;flex-direction: column;align-items: center;margin-top: 9.6875vw">
                             <img class="reveal-top"
-                                    src="../vesalservice/img/duochangjing1.png">
+                                    src="../vesalservice/img/duochangjing1.png" style="width: 14.6875vw">
                             <div class="reveal-top"
-                                    style="width: 165px;height:40px;font-size: 16px;text-align: left">
+                                    style="width: 165px;height:40px;font-size: 1vw;text-align: left;margin-top: 16px">
                                 自主学习，手术讨论，大屏授课，AR教学
                             </div>
                         </div>
                     </div>
                     <div class="right">
-                        <div style="width:247px">
-                            <img class="reveal-top"  src="../vesalservice/img/zhuanyepinzhi1.png">
-                            <div class="reveal-top"  style="width: 228px;height: 64px;font-size: 16px;text-align: left;margin-top: 16px">
+                        <div style="width:12.87vw">
+                            <img class="reveal-top"  src="../vesalservice/img/zhuanyepinzhi1.png" >
+                            <div class="reveal-top"  style="width: 11.875vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
                                 10000+精准模型，讲解视频、
                                 动画演示以及课程讲解
                                 专业品质 内容详实
                             </div>
                         </div>
-                        <img class="reveal-top"  src="../vesalservice/img/duochangjing2.png" style="margin-top: 160px">
+                        <img class="reveal-top"  src="../vesalservice/img/duochangjing2.png" style="margin-top: 8.3vw;width: 34vw;">
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@
                                 placement="left-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/B.png">
+                            <img src="../vesalservice/img/B.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
                                 <img  class="reveal-serviceLeft" data-wow-duration="2s" data-wow-delay="0.5s"
-                                      src="../vesalservice/img/dingzhikaifa.png">
+                                      src="../vesalservice/img/dingzhikaifa.png" style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                         <el-popover
@@ -55,10 +55,10 @@
                                 placement="right-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/C.png">
+                            <img src="../vesalservice/img/C.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
                                 <img class="reveal-serviceRight" data-wow-duration="2s" data-wow-delay="0.5s"
-                                        src="../vesalservice/img/chubanchengji.png">
+                                        src="../vesalservice/img/chubanchengji.png" style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                     </div>
@@ -68,10 +68,10 @@
                                 placement="left-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/A.png">
+                            <img src="../vesalservice/img/A.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
                                 <img class="reveal-serviceLeft" data-wow-duration="2s"  data-wow-offset="250"
-                                        src="../vesalservice/img/neirongshouquan.png">
+                                        src="../vesalservice/img/neirongshouquan.png" style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                         <el-popover
@@ -79,26 +79,26 @@
                                 placement="right-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/D.png">
+                            <img src="../vesalservice/img/D.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
                                 <img class="reveal-serviceRight" data-wow-duration="2s"  data-wow-offset="250"
-                                        src="../vesalservice/img/jiaoxuefuzhu.png">
+                                        src="../vesalservice/img/jiaoxuefuzhu.png" style="width: 13.072vw">
                             </el-button>
 
                         </el-popover>
                     </div>
                 </div>
                 <div style="width: 100%;display: flex;margin-top: 86px">
-                    <img src="../vesalservice/img/hezuohuoban.png"/>
+                    <img src="../vesalservice/img/hezuohuoban.png" style="width: 8.5vw;height: 2.6vw"/>
                 </div>
                 <div class="Partners">
                     <div class="top" >
-                        <img class="reveal-top"  v-for="item in partnersData" :src="item">
+                        <img class="reveal-top"  v-for="item in partnersData" :src="item" style="width: 11.25vw;">
                     </div>
                     <div class="bottom">
                         <div style="height:91px;display: flex;align-items:flex-end;justify-content: flex-end">
                             <div style="height: 39px;width:100%;background: #DFEFF9;margin:0 -10px 9px 0"></div>
-                            <a href=""><img src="../vesalservice/img/qiyehezuo.png"></a>
+                            <a href=""><img src="../vesalservice/img/qiyehezuo.png" style="width: 15.46875vw;"></a>
                         </div>
                     </div>
                 </div>
@@ -168,9 +168,9 @@
 </script>
 <style scoped lang="less">
     .vesalService{
-        padding: 0 360px;
+        padding: 0 18.75vw;
         .top{
-            margin: 56px 0 33px 0;
+            margin: 4vw 0 33px 0;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -180,19 +180,19 @@
             .dingzhi{
                 display: flex;
                 flex-direction: column;
-                height: 960px;
+                height: 50vw;
                 .dingzhiContent{
                     display: flex;
                     .left{
-                        margin:70px 0 0 204px;
-                        width: 282px;
-                        height: 682px;
+                        margin:3.64vw 0 0 5.5vw;
+                        width: 14.68vw;
+                        height: 25.05vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                     }
                     .right{
-                        margin-top: 178px;
+                        margin-top: 9.27vw;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -204,25 +204,25 @@
             .dingzhiInfo{
                 margin-top: 68px;
                 .Cooperation{
-                    height: 510px;
+                    height: 24vw;
                     background:url("../vesalservice/img/duoyanghua1.png") no-repeat ;
-                    background-size: 100% 448px;
+                    background-size: 100%;
                     background-position-y: bottom;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
                     .top{
-                        width: 552px;
-                        height: 250px;
+                        width: 28.75vw;
+                        height: 13.02vw;
                         /*background: skyblue;*/
                         margin: 0;
                         display: flex;
                         justify-content: space-between;
                     }
                     .bottom{
-                        width: 913px;
-                        height: 250px;
+                        width: 47.552vw;
+                        height: 13.02vw;
                         /*background: green;*/
                         margin: 0;
                         display: flex;
@@ -231,7 +231,6 @@
                 }
                 .Partners{
                     width: 100%;
-                    height: 199px;
                     /*margin-top: -55px;*/
                     display: flex;
                     flex-direction: column;

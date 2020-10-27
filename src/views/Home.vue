@@ -6,30 +6,30 @@
             <!--菜单-->
             <el-menu :default-active="activeIndex" unique-opened :collapse-transition="false"
                      class="el-menu-demo" mode="horizontal" @click="handleSelect" active-text-color="#1292E4">
-                <el-menu-item style="padding: 0;margin-right: 20px">
+                <el-menu-item style="width: auto;float: left;margin: 10px auto;">
                     <template slot="title">
-                        <img @click="logo" :src="require('../assets/img/logo.png')">
+                        <img @click="logo" :src="require('../assets/img/logo.png')" style="width: 187px;height: 59px;margin-left: 28%;padding-right: 100px">
                     </template>
                 </el-menu-item>
-                <el-menu-item :index="index + ''" v-for="(item,index) in menuData" :key="index">
+                <el-menu-item style="margin: 10px auto;" :index="index + ''" v-for="(item,index) in menuData" :key="index">
                     <template slot="title">
                         <router-link :to={path:item.path}>{{item.authName}}</router-link>
 <!--                        <span @click="$router.push({path:item.path})">{{item.authName}}</span>-->
                     </template>
                 </el-menu-item>
                 <!--其他产品-->
-                <el-submenu index="30">
-                    <template slot="title">
-                        <span>其他产品</span>
-                    </template>
-                    <el-menu-item :index="index1 + ''" v-for="(subItem,index1) in menueOther" :key="index1">
-                        <template slot="title">
-                            <span>{{subItem}}</span>
-                        </template>
-                    </el-menu-item>
-                </el-submenu>
+<!--                <el-submenu index="30">-->
+<!--                    <template slot="title">-->
+<!--                        <span>其他产品</span>-->
+<!--                    </template>-->
+<!--                    <el-menu-item :index="index1 + ''" v-for="(subItem,index1) in menueOther" :key="index1">-->
+<!--                        <template slot="title">-->
+<!--                            <span>{{subItem}}</span>-->
+<!--                        </template>-->
+<!--                    </el-menu-item>-->
+<!--                </el-submenu>-->
                 <!--登录-->
-                <el-menu-item index="66" style="padding-left: 40px;margin-left: 20px">
+                <el-menu-item index="66" style="padding-left: 40px;margin: 10px auto;float: right">
                     <template slot="title">
                         <img style="margin: 0 21px" :src="require('../assets/img/wo.png')">
                         <span>登录</span>
@@ -42,24 +42,24 @@
         <div class="Footer">
             <div class="footer">
                 <img
-                     src="../assets/img/vesallongo.png"/>
+                     src="../assets/img/vesallongo.png" style="width: 8.5vw"/>
                 <div class="info">
-                    <div style="font-size: 18px;margin-bottom: 19px;color: black">联系我们</div>
+                    <div style="font-size: 0.9375vw;margin-bottom: 1vw;color: black">联系我们</div>
                     <span>工作地址:陕西省西安市长安区韦曲街办兴龙花园5幢312室</span>
                     <span>电话：029-68579950</span>
                     <span>微信客服：15619045028</span>
                     <div style="display: flex;flex-direction: row">
-                        <span style="margin-right: 93px">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 陕ICP备17006533号-1</span>
+                        <span style="margin-right: 2vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 陕ICP备17006533号-1</span>
                         <span>维萨里官方微信客服</span>
                     </div>
 
                 </div>
                 <img
-                     src="../assets/img/gongzhonghaos.png"/>
+                     src="../assets/img/gongzhonghaos.png" style="width: 8.18vw;"/>
             </div>
         </div>
         <!--回到顶部、客服-->
-        <el-backtop :bottom="130" :right="285">
+        <el-backtop :bottom="130" >
             <div
                     style="{
                     text-align: center;
@@ -71,7 +71,7 @@
             </div>
         </el-backtop>
 
-        <el-backtop class="kefu" :bottom="50" :right="285">
+        <el-backtop class="kefu" :bottom="50" >
             <div
                     style="{
                     height: 70px;
@@ -136,6 +136,7 @@
                 menuData: [
                     {
                         authName: '首页',
+                        path:'/home/jiepouContent'
                     },
                     {
                         authName: '解剖大师',
@@ -196,8 +197,6 @@
         line-height: 60px;
         width: 100%;
     }
-
-
     .Footer {
         margin-top: 60px;
         background: #F5F5F5;
@@ -207,8 +206,8 @@
         height: 333px;
 
         .footer {
-            margin: 90px 360px;
-            height: 148px;
+            margin: 90px 16vw;
+            height: 7.7vw;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -216,13 +215,13 @@
             .info {
                 height: 148px;
                 display: flex;
-                margin-left: 120px;
+                margin-left:6.25vw;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-around;
 
                 span {
-                    font-size: 14px;
+                    font-size: 0.78125vw;
                     color: #707070;
                 }
             }
@@ -236,7 +235,6 @@
         z-index: 999;
         border: none !important;
         width: 100%;
-        padding: 0 360px;
         border-bottom: 1px solid #dbdbdb!important;
     }
 
@@ -251,7 +249,7 @@
     .kefuImg{
         position: fixed;
         bottom: 30px;
-        right:350px;
+        right:80px;
     }
 
 

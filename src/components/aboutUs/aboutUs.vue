@@ -18,7 +18,7 @@
         <div class="aboutUsMid">
             <div class="aboutUsMid1">促进数字解剖在中国的普遍应用</div>
             <div class="aboutUsMid2">
-                
+
             </div>
         </div>
         <div class="aboutUsButtom"></div>
@@ -54,7 +54,7 @@
 
 <style lang="less" scoped>
 .aboutUs{
-    margin: 40px 360px;
+    margin: 40px 18.75vw;
     display: flex;
     flex-direction: column;
     /*background: pink;*/
@@ -63,6 +63,7 @@
         display: flex;
         flex-direction: column;
         .aboutUsTop1{
+            position: absolute;
             font-size: 45px;
             color: #333;
             text-align: center;

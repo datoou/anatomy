@@ -1,8 +1,8 @@
 <template>
     <div class="jiepoudynamic">
         <div class="top">
-            <img class="reveal-top"  src="../jiepoudynamic/img/jiepoudongtai.png">
-            <a class="reveal-top" href="" style="text-decoration: none">查看更多</a>
+            <img class="reveal-top"  src="../jiepoudynamic/img/jiepoudongtai.png" style="width: 20vw;height: auto">
+            <a class="reveal-top" href="" style="text-decoration: none;font-size: 1vw">查看更多</a>
         </div>
 
         <div class="dynamicContent">
@@ -10,9 +10,9 @@
                         <el-col :span="12" v-for="(cardItem,index) in dynamicData" :key="cardItem.id+index" >
                             <el-card
                                     class="reveal-top"
-                                    :body-style="{ padding: '0px',marginBottom:'10px',width:'574px',display:'flex',flexDirection:'column' }">
+                                    :body-style="{ padding: '0px',marginBottom:'10px',width:'30.47vw',display:'flex',flexDirection:'column' }">
                                 <div class="list">
-                                    <img :src="cardItem.bg" >
+                                    <img :src="cardItem.bg" style="width: 10vw;height: 10vw">
                                     <div class="listContent">
                                         <div class="title">{{cardItem.title}}</div>
                                         <div class="content">{{cardItem.content}}</div>
@@ -99,9 +99,9 @@
 </script>
 <style scoped lang="less">
     .jiepoudynamic{
-        padding: 0 360px;
+        padding: 0 18.75vw;
         .top{
-            margin: 76px 0 33px 0;
+            margin: 4vw 0 33px 0;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -109,28 +109,28 @@
         }
         .dynamicContent{
             .list{
-                height:250px;
+                height:13vw;
                 display: flex;
                 align-items: center;
                 img{
-                    margin: 0 29px;
+                    margin: 0 1.5vw;
                 }
                 .listContent{
-                    width: 308px;
-                    height: 190px;
+                    width: 16vw;
+                    height: 10vw;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: space-around;
                     .title{
-                        width: 149px;
-                        height: 25px;
-                        font-size: 24px;
+                        width: 7.78vw;
+                        height: 1.3vw;
+                        font-size: 1.25vw;
                     }
                     .content{
-                        width: 308px;
-                        height: 137px;
-                        font-size: 16px;
+                        width: 16vw;
+                        height: 7.13vw;
+                        font-size: 0.8vw;
                         text-align: left;
                         color: #B3C0D1;
                     }
@@ -151,7 +151,7 @@
     }
     .dynamicContent .el-card__body:hover{
         background-image: url("../jiepoudynamic/img/zixunxuanzhong.png");
-        background-size: 100% 263px;
+        background-size: 30.64vw 13.77vw;
         cursor: pointer;
         border-radius: 0;
     }
@@ -168,10 +168,10 @@
         background: #fff !important;
         border:2px solid #dbdbdb !important;
         color: #dbdbdb!important;
-        width: 40px;
-        height: 40px;
-        font-size: 24px;
-        line-height: 40px;
+        width: 2.5vw;
+        height: 2.5vw;
+        font-size: 1.25vw;
+        line-height: 2.5vw;
         border-radius: 10px!important;
         font-weight: normal;
     }

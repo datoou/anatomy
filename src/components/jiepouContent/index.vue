@@ -1,10 +1,10 @@
 <template>
     <div class="Main">
         <!--轮播-->
-        <div class="banner">
-            <el-carousel trigger="click">
-                <el-carousel-item v-for="item in bannerData" :key="item.title" :label="item.title">
-                    <img class="small" :src="item.banner"/>
+        <div class="banner" >
+            <el-carousel trigger="click" :autoplay="false">
+                <el-carousel-item class="label" v-for="item in bannerData" :key="item.title" :label="item.title">
+                    <img :src="item.banner" style="width: 100%;height: auto"/>
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -16,9 +16,9 @@
                              :interval="4000" type="card">
                     <el-carousel-item v-for="appitem in bannerAppData" :key="appitem.id" :label="1"
                                       :initial-index="active_Name">
-                        <div style="width: 170px;height: 170px;overflow:hidden;border-radius: 30px">
+                        <div style="width: 9vw;height: 9vw;overflow:hidden;border-radius: 30px">
                             <img :src="appitem.bannerApp"
-                                 style="width: 170px;height: 170px;cursor: pointer;transition: all 0.8s;">
+                                 style="width: 100%;height: 100%;cursor: pointer;transition: all 0.8s;">
                         </div>
                     </el-carousel-item>
                 </el-carousel>
@@ -43,24 +43,24 @@
                                                  style="display: flex;flex-direction: column;height: 82px;justify-content: space-around">
                                                 <div class="list">
                                                     <span class="list1">{{item.id}}</span>
-                                                    <span style="font-size: 24px;letter-spacing: 2px">{{item.title1}}</span>
+                                                    <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.title1}}</span>
                                                 </div>
-                                                <div style="font-size: 18px;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default">
+                                                <div style="font-size: 1vm;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default">
                                                     {{item.title2}}
                                                 </div>
                                             </div>
-                                            <img :src="item.appinfo" style="width: 559px;height:579px;">
+                                            <img :src="item.appinfo" style="width: 29vw;height:29vw;">
                                         </el-tab-pane>
                                     </el-tabs>
                                 </div>
                                 <div class="appInfoBottomRight">
                                     <div class="img">
                                         <a href=""><img src="../jiepouContent/img/Android.png"
-                                                        style="width: 148px;height: 48px"></a>
+                                                        style="width: 8vw;height: 2.5vw"></a>
                                         <a href=""><img src="../jiepouContent/img/PC.png"
-                                                        style="width: 148px;height: 48px"></a>
+                                                        style="width: 8vw;height: 2.5vw"></a>
                                         <a href=""><img src="../jiepouContent/img/PC.png"
-                                                        style="width: 148px;height: 48px"></a>
+                                                        style="width: 8vw;height: 2.5vw"></a>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
 
 <style lang="less" scoped>
     .Main {
-        margin-top: 60px;
+        margin-top: 80px;
         color: #333;
         text-align: center;
         /*line-height: 160px;*/
@@ -319,18 +319,18 @@
     }
     .appInfo {
         width: 100%;
-        height: 705px;
+        height: 37.5vw;
         background-image: url("../jiepouContent/img/appdiwen.png");
-        background-size: 100% 705px;
+        background-size: 100% 37.5vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
         .appInfoTop {
-            height: 67px;
+            height: 4vw;
             display: flex;
-            width: 442px;
+            width: 23vw;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
@@ -351,8 +351,8 @@
         }
 
         .appInfoBottom {
-            width: 963px;
-            height: 578px;
+            width: 50vw;
+            height: 30vw;
             margin-bottom: 17px;
             display: flex;
             align-items: flex-end;
@@ -360,11 +360,11 @@
             .appInfoBottomList {
                 display: flex;
                 flex-direction: column;
-                margin: 20px 0 0 10px;
+                margin: 5vw 0 0 0;
 
                 .list {
-                    width: 210px;
-                    height: 44px;
+                    width: 12vw;
+                    height: 2.2vw;
                     background: #1292E4;
                     color: #ffffff;
                     border-radius: 10px;
@@ -373,9 +373,9 @@
 
                     .list1 {
                         text-align: center;
-                        font-size: 17px;
-                        width: 18px;
-                        height: 18px;
+                        font-size: 1vw;
+                        width: 1.2vw;
+                        height: 1.2vw;
                         color: #000000;
                         background: #ffffff;
                         border-radius: 9px;
@@ -401,27 +401,26 @@
 <style>
     /*轮播*/
     .banner {
-        /*position: absolute;*/
-        /*top: 0;*/
-        /*left: 0;*/
         width: 100%;
     }
 
     .banner .el-carousel__container {
-        height: 444px !important;
+        /*height: 23.125vw !important;*/
     }
 
     .banner .el-carousel__indicator--horizontal {
         /*border: 1px dashed #fff;*/
         border-right: 0;
         border-left: 0;
-        padding: 8px 40px !important;
-        margin: -30px 0;
+
     }
 
     .banner .el-carousel__indicators--labels {
         margin-bottom: 15px;
-        height: 30px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        /*height: 30px;*/
         background: url("../jiepouContent/img/banner name.png") no-repeat center;
     }
 
@@ -431,7 +430,7 @@
     }
 
     .contentMid {
-        margin: 0 360px;
+        margin: 0 18.75%;
         position: relative;
         display: flex;
         flex: 1;
@@ -445,16 +444,21 @@
         margin-top: 10px;
     }
 
+    .appSwitch .el-carousel__arrow{
+         width: 50px;
+         height: 50px;
+    }
+
     .appSwitch .el-carousel {
         overflow: hidden;
     }
 
     .appSwitch .el-carousel__container {
-        height: 250px;
+        height: 13vw;
     }
 
     .appSwitch .el-carousel__container .el-carousel__item {
-        height: 250px;
+        height: 13vw;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -502,8 +506,8 @@
     }
 
     .appInfoBottomList .el-tabs {
-        width: 878px;
-        height: 578px;
+        width: 46vw;
+        height: 30vw;
     }
 
     .appInfoBottomList .el-tabs--card > .el-tabs__header .el-tabs__item.is-active .list {
