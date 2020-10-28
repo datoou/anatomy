@@ -2,14 +2,15 @@
   <!--  <div class="containers" >-->
   <!--    <img src="../assets/img/logo.png" style="margin-top: 1000px" class="wow bounceInLeft " data-wow-duration="4s" >-->
   <div class="containers">
-    <el-row>
+    <el-row style="">
       <div class="headerTop">
         <el-menu :default-active="activeIndex"
                  unique-opened
                  :collapse-transition="false"
                  mode="horizontal"
                  @click="handleSelect"
-                 active-text-color="#1292E4">
+                 active-text-color="#1292E4"
+                 class="el-menu-demo">
 
           <el-menu-item style="">
             <template slot="title">
@@ -261,6 +262,7 @@ export default {
   text-align: center;
   display: flex;
   flex: 1;
+  color: #333;
   justify-content: center;
 }
 
@@ -306,9 +308,11 @@ export default {
   top: 0;
   left: 0;
   z-index: 999;
-  border: none !important;
   width: 100%;
-  border-bottom: 1px solid #dbdbdb !important;
+  display: flex;
+  flex: 1;
+  color: #333;
+  justify-content: center;
 }
 
 .tabs {
