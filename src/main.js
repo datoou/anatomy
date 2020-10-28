@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import axios from 'axios'
-import { Button, Select ,Header,Main,Footer ,Container,Menu,Submenu,MenuItem,Carousel,CarouselItem,Tabs,TabPane,
-  Backtop,Popover,Row,Col,Card,Pagination,Divider,Form,FormItem,Input,Message} from 'element-ui';
+import {
+  Button, Select, Header, Main, Footer, Container, Menu, Submenu, MenuItem, Carousel, CarouselItem, Tabs, TabPane,
+  Backtop, Popover, Row, Col, Card, Pagination, Divider, Form, FormItem, Input, Message
+} from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
 // 引入动画样式
 import wow from 'wowjs'
@@ -17,6 +19,16 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vue.prototype.$wow = wow
 Vue.prototype.$message = Message
+/**
+
+ * 获取屏幕宽高
+ */
+Vue.prototype.getViewportSize = function () {
+  return {
+    width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+    height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+  };
+};
 Vue.use(Button)
 Vue.use(Select)
 Vue.use(Header)
