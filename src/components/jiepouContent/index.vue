@@ -28,7 +28,7 @@
                             :key="appitem.id"
                             :label="1"
                             :initial-index="active_Name">
-            <div style="width: 9vw;height: 9vw;overflow:hidden;border-radius: 30px">
+            <div style="width: 8.5vw;height: 8.5vw;overflow:hidden;border-radius: 30px">
               <img :src="appitem.bannerApp"
                    style="width: 100%;height: 100%;cursor: pointer;transition: all 0.8s;">
             </div>
@@ -416,6 +416,7 @@ export default {
 /*轮播*/
 .banner {
   width: 100%;
+  margin-top: 50px;
 }
 .banner .el-carousel__container {
   /*height: 23.125vw !important;*/
@@ -427,15 +428,16 @@ export default {
 }
 .banner .el-carousel__indicators--labels {
   margin-bottom: 15px;
-  width: 80%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  /*height: 30px;*/
+  height: 40px;
   background: url('../jiepouContent/img/banner name.png') no-repeat center;
 }
 .banner .el-carousel__button {
   background: none !important;
   color: #fff;
+  margin-left: 50px;
 }
 .contentMid {
   margin: 0 18.75%;
@@ -448,20 +450,20 @@ export default {
 /*app切换*/
 .appSwitch {
   width: 100%;
-  margin-top: 10px;
 }
 .appSwitch .el-carousel__arrow {
   width: 50px;
   height: 50px;
+  margin-top: 1vw;
 }
 .appSwitch .el-carousel {
   overflow: hidden;
 }
 .appSwitch .el-carousel__container {
-  height: 13vw;
+  height: 10vw;
 }
 .appSwitch .el-carousel__container .el-carousel__item {
-  height: 13vw;
+  height: 12vw;
   align-items: center;
   justify-content: center;
   display: flex;

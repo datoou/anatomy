@@ -101,7 +101,7 @@
     .jiepoudynamic{
         padding: 0 18.75vw;
         .top{
-            margin: 4vw 0 33px 0;
+            margin: 4vw 0 0 0;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
