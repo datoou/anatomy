@@ -16,41 +16,40 @@
             <template slot="title">
               <img @click="logo"
                    :src="require('../assets/img/logo.png')"
-                   style="width: 186.9px;height: 59px;">
+                   style="width: 9.73vw;height: 3.07vw;">
             </template>
           </el-menu-item>
 
-          <el-menu-item style=""
+          <el-menu-item style="margin-left: 2%;font-size:0.85vw"
                         :index="index + ''"
                         v-for="(item,index) in menuData"
                         :key="index">
             <template slot="title">
-              <router-link :to={path:item.path}>{{item.authName}}</router-link>
-              <!-- <span @click="$router.push({path:item.path})">{{item.authName}}</span> -->
+              <router-link :to={path:item.path} style="">{{item.authName}}</router-link>
             </template>
           </el-menu-item>
 
-          <el-submenu index="30">
-            <template slot="title">
-              <span style="">其他产品</span>
-            </template>
-            <el-menu-item :index="index1 + ''"
-                          v-for="(subItem,index1) in menueOther"
-                          :key="index1">
-              <template slot="title">
-                <span>{{subItem}}</span>
-              </template>
-            </el-menu-item>
-          </el-submenu>
+<!--          <el-submenu index="30">-->
+<!--            <template slot="title">-->
+<!--              <span style="">其他产品</span>-->
+<!--            </template>-->
+<!--            <el-menu-item :index="index1 + ''"-->
+<!--                          v-for="(subItem,index1) in menueOther"-->
+<!--                          :key="index1">-->
+<!--              <template slot="title">-->
+<!--                <span>{{subItem}}</span>-->
+<!--              </template>-->
+<!--            </el-menu-item>-->
+<!--          </el-submenu>-->
 
-          <el-menu-item index="66"
-                        style="">
-            <template slot="title">
-              <img style="width:40px;height:40px;"
-                   :src="require('../assets/img/wo.png')">
-              <span style="margin-left:5px;color:#1292E4">登录</span>
-            </template>
-          </el-menu-item>
+<!--          <el-menu-item index="66"-->
+<!--                        style="">-->
+<!--            <template slot="title">-->
+<!--              <img style="width:40px;height:40px;"-->
+<!--                   :src="require('../assets/img/wo.png')">-->
+<!--              <span style="margin-left:5px;color:#1292E4">登录</span>-->
+<!--            </template>-->
+<!--          </el-menu-item>-->
 
         </el-menu>
       </div>
@@ -201,22 +200,23 @@ export default {
           authName: "首页",
           path: "/home/jiepouContent"
         },
+        // {
+        //   authName: "解剖大师"
+        // },
+        // {
+        //   authName: "维萨里3D解剖"
+        // },
         {
-          authName: "解剖大师"
-        },
-        {
-          authName: "维萨里3D解剖"
+          authName: "解剖动态"
         },
         {
           authName: "软件下载",
           path: "/home/download"
         },
-        {
-          authName: "解剖微课"
-        },
-        {
-          authName: "解剖动态"
-        },
+        // {
+        //   authName: "解剖微课"
+        // },
+
         {
           authName: "维萨里服务"
         },
@@ -259,11 +259,10 @@ export default {
 .headerTop {
   // height: 59px;
   width: 100%;
-  text-align: center;
   display: flex;
   flex: 1;
   color: #333;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .Header {
