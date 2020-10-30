@@ -20,13 +20,14 @@
             </template>
           </el-menu-item>
 
-          <el-menu-item style="margin-left: 2%;font-size:0.8vw;font-weight: 400"
+          <el-menu-item style="font-size:0.9vw;font-weight: 400;"
                         :index="index + ''"
                         v-for="(item,index) in menuData"
                         :key="index">
-            <template slot="title">
-              <router-link :to={path:item.path} style="">{{item.authName}}</router-link>
-            </template>
+              <template slot="title" style="">
+                <router-link :to={path:item.path} style="padding:1vw;">{{item.authName}}</router-link>
+              </template>
+
           </el-menu-item>
         </el-menu>
       </div>
@@ -148,7 +149,7 @@ export default {
         // },
         {
           authName: "解剖动态",
-          path: "/home/jiepoudynamic/dynamicMore"
+          path: "/home/dynamicMore"
         },
         {
           authName: "软件下载",

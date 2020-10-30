@@ -1,8 +1,8 @@
 <template>
     <div class="jiepoudynamic">
         <div class="top">
-            <img class="reveal-top"  src="../jiepoudynamic/img/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
-        </div>
+            <img class="reveal-top" src="../components/jiepoudynamic/img/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
+        </div>x
         <div class="dynamicContent">
             <el-row>
                 <el-col :span="12" v-for="(cardItem,index) in dynamicData" :key="cardItem.id+index" >
@@ -10,8 +10,8 @@
                             class="reveal-top"
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
                         <div class="list" >
-                            <img :src="cardItem.bg" style="width: 70.52vw;height: 13.02vw">
-                            <div style="position: fixed;">
+                            <img :src="cardItem.bg" style="width: 50.52vw;height: 13.02vw">
+                            <div style="position:absolute;">
                                 <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center">
                                     <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
                                 </div>
@@ -57,37 +57,37 @@
                 dynamicData:[
                     {
                         id:1,
-                        bg:require('../jiepoudynamic/img/tu1.png'),
+                        bg:require('../components/jiepoudynamic/img/tu1.png'),
                         title:'维萨里解剖大升级',
                         // content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     },
                     {
                         id:2,
-                        bg:require('../jiepoudynamic/img/tu2.png'),
+                        bg:require('../components/jiepoudynamic/img/tu2.png'),
                         title:'系统解剖微课',
                         content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     },
                     {
                         id:3,
-                        bg:require('../jiepoudynamic/img/tu3.png'),
+                        bg:require('../components/jiepoudynamic/img/tu3.png'),
                         title:'系统解剖微课',
                         content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     },
                     {
                         id:4,
-                        bg:require('../jiepoudynamic/img/tu4.png'),
+                        bg:require('../components/jiepoudynamic/img/tu4.png'),
                         title:'系统解剖微课',
                         content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     },
                     {
                         id:5,
-                        bg:require('../jiepoudynamic/img/tu1.png'),
+                        bg:require('../components/jiepoudynamic/img/tu1.png'),
                         title:'系统解剖微课',
                         content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     },
                     {
                         id:6,
-                        bg:require('../jiepoudynamic/img/tu2.png'),
+                        bg:require('../components/jiepoudynamic/img/tu2.png'),
                         title:'系统解剖微课',
                         content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
                     }
@@ -160,7 +160,7 @@
         padding: 7px !important;
     }
     .dynamicContent .el-card__body:hover{
-        background-image: url("../jiepoudynamic/img/zixunxuanzhong.png");
+        background-image: url("../components/jiepoudynamic/img/zixunxuanzhong.png");
         background-size: 30.64vw 13.77vw;
         cursor: pointer;
         border-radius: 0;

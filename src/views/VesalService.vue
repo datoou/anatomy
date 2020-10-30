@@ -1,18 +1,15 @@
 <template>
-    <div style="margin: 4vw 0;width: 100%;height: auto;">
-        <div style="width: 100%;height: auto;">
-            <div style="background-color: #2d9afa;width: 100%;height: 23.125vw"></div>
+<div style="margin: 4vw 0;width: 100%;height: auto;">
+    <div style="width: 100%;height: auto;">
+        <div style="background-color: #2d9afa;width: 100%;height: 23.125vw"></div>
+    </div>
+    <div style="padding: 0 18.75vw;">
+        <div style="margin: 4vw 10vw">
+            <div style="font-size: 1.25vw"><i class="el-icon-caret-right"/>10000+ 3D人体结构、医学动画、动作姿态库的<span style="font-weight: bold">免费正版授权</span></div>
+            <div style="font-size: 1.25vw;margin-top: 1vw"><i class="el-icon-caret-right"/>解决医学教学、医疗培训、运动康复、瑜伽健身、产后修复等多场景下的<span style="font-weight: bold">应用定制需求</span></div>
+            <div style="font-size: 1.25vw;font-weight: bold;margin-top: 1vw">维萨里，助力您提供丰富专业、形象逼真的3D人体展示，提升用户理解和满意度</div>
         </div>
-        <div style="padding: 0 18.75vw;">
-            <div style="margin: 4vw 10vw">
-                <div style="font-size: 1.25vw"><i class="el-icon-caret-right"/>10000+ 3D人体结构、医学动画、动作姿态库的<span
-                        style="font-weight: bold">免费正版授权</span></div>
-                <div style="font-size: 1.25vw;margin-top: 1vw"><i class="el-icon-caret-right"/>解决医学教学、医疗培训、运动康复、瑜伽健身、产后修复等多场景下的<span
-                        style="font-weight: bold">应用定制需求</span></div>
-                <div style="font-size: 1.25vw;font-weight: bold;margin-top: 1vw">维萨里，助力您提供丰富专业、形象逼真的3D人体展示，提升用户理解和满意度
-                </div>
-            </div>
-            <div style="width: 100%;margin-top: 5vw">
+        <div style="width: 100%;margin-top: 5vw">
 
                 <div style="font-size: 1.25vw;color: #2d9afa;text-align: center">—— 李哲教你学解剖案例 ——</div>
                 <el-card
@@ -141,6 +138,13 @@
     import scrollReveal from 'scrollreveal';
 
     export default {
+        data(){
+            return{
+                windowWidth: (document.documentElement.clientWidth) + 'px',  //实时屏幕宽度
+                windowHeight: (((document.documentElement.clientWidth) * 444) / 1920) + 'px',   //实时屏幕高度
+            }
+        },
+        mounted(){
         mounted() {
             //第一种写法，可以设置wow中属性
             this.$nextTick(() => { // 在dom渲染完后,再执行动画
