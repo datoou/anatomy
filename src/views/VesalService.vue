@@ -144,7 +144,6 @@
                 windowHeight: (((document.documentElement.clientWidth) * 444) / 1920) + 'px',   //实时屏幕高度
             }
         },
-        mounted(){
         mounted() {
             //第一种写法，可以设置wow中属性
             this.$nextTick(() => { // 在dom渲染完后,再执行动画

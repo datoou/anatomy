@@ -8,7 +8,6 @@ import download from "../views/download";
 import jiepouContent from '../components/jiepouContent/index'
 import aboutUs from "../components/aboutUs/aboutUs";
 import vesalService from "../views/VesalService";
-import dynamicMore from "../components/jiepoudynamic/dynamicMore";
 import partner from "../views/Partner";
 import dynamicMore from "../views/dynamicMore";
 
