@@ -7,6 +7,7 @@ import wxLogin from "../components/login/wxLogin";
 import download from "../views/download";
 import jiepouContent from '../components/jiepouContent/index'
 import aboutUs from "../components/aboutUs/aboutUs";
+import dynamicMore from "../components/jiepoudynamic/dynamicMore";
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,10 @@ const routes = [
             {
                 path: '/home/jiepouContent',
                 component: jiepouContent
+            },
+            {
+                path: '/home/jiepoudynamic/dynamicMore',
+                component: dynamicMore
             },
             {
                 path:'/home/aboutUs',

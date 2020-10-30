@@ -20,7 +20,7 @@
             </template>
           </el-menu-item>
 
-          <el-menu-item style="margin-left: 2%;font-size:0.85vw"
+          <el-menu-item style="margin-left: 2%;font-size:0.8vw;font-weight: 400"
                         :index="index + ''"
                         v-for="(item,index) in menuData"
                         :key="index">
@@ -28,29 +28,6 @@
               <router-link :to={path:item.path} style="">{{item.authName}}</router-link>
             </template>
           </el-menu-item>
-
-<!--          <el-submenu index="30">-->
-<!--            <template slot="title">-->
-<!--              <span style="">其他产品</span>-->
-<!--            </template>-->
-<!--            <el-menu-item :index="index1 + ''"-->
-<!--                          v-for="(subItem,index1) in menueOther"-->
-<!--                          :key="index1">-->
-<!--              <template slot="title">-->
-<!--                <span>{{subItem}}</span>-->
-<!--              </template>-->
-<!--            </el-menu-item>-->
-<!--          </el-submenu>-->
-
-<!--          <el-menu-item index="66"-->
-<!--                        style="">-->
-<!--            <template slot="title">-->
-<!--              <img style="width:40px;height:40px;"-->
-<!--                   :src="require('../assets/img/wo.png')">-->
-<!--              <span style="margin-left:5px;color:#1292E4">登录</span>-->
-<!--            </template>-->
-<!--          </el-menu-item>-->
-
         </el-menu>
       </div>
     </el-row>
@@ -80,43 +57,6 @@
         </div>
       </div>
     </el-row>
-    <!-- <div class="Header"> -->
-    <!--菜单-->
-    <!-- <el-menu :default-active="activeIndex" unique-opened :collapse-transition="false"
-                     class="el-menu-demo" mode="horizontal" @click="handleSelect" active-text-color="#1292E4">
-                <el-menu-item style="width: auto;float: left;margin: 10px auto;">
-                    <template slot="title">
-                        <img @click="logo" :src="require('../assets/img/logo.png')" style="width: 187px;height: 59px;margin-left: 28%;padding-right: 100px">
-                    </template>
-                </el-menu-item>
-                <el-menu-item style="margin: 10px auto;" :index="index + ''" v-for="(item,index) in menuData" :key="index">
-                    <template slot="title">
-                        <router-link :to={path:item.path}>{{item.authName}}</router-link> -->
-    <!-- <span @click="$router.push({path:item.path})">{{item.authName}}</span> -->
-    <!-- </template>
-                </el-menu-item> -->
-    <!--其他产品-->
-    <!-- <el-submenu index="30">
-                   <template slot="title">
-                       <span>其他产品</span>
-                   </template>
-                   <el-menu-item :index="index1 + ''" v-for="(subItem,index1) in menueOther" :key="index1">
-                       <template slot="title">
-                           <span>{{subItem}}</span>
-                       </template>
-                   </el-menu-item>
-               </el-submenu> -->
-    <!-- 登录 -->
-    <!-- <el-menu-item index="66" style="padding-left: 40px;margin: 10px auto;float: right">
-                    <template slot="title">
-                        <img style="margin: 0 21px" :src="require('../assets/img/wo.png')">
-                        <span>登录</span>
-                    </template>
-                </el-menu-item>
-            </el-menu> -->
-    <!-- </div> -->
-    <!-- <router-view/> -->
-
     <!--回到顶部、客服-->
     <el-backtop :bottom="130">
       <div style="{
@@ -194,7 +134,7 @@ export default {
       // 回到底部的，距离底部的scrolltop
       bottomHeight: 0,
 
-      activeIndex: "",
+      activeIndex: "0",
       menuData: [
         {
           authName: "首页",
@@ -207,7 +147,8 @@ export default {
         //   authName: "维萨里3D解剖"
         // },
         {
-          authName: "解剖动态"
+          authName: "解剖动态",
+          path: "/home/jiepoudynamic/dynamicMore"
         },
         {
           authName: "软件下载",
