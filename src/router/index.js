@@ -8,7 +8,7 @@ import download from "../views/download";
 import jiepouContent from '../components/jiepouContent/index'
 import aboutUs from "../components/aboutUs/aboutUs";
 import vesalService from "../views/VesalService";
-import dynamicMore from "../components/jiepoudynamic/dynamicMore";
+import dynamicMore from "../views/dynamicMore";
 
 Vue.use(VueRouter)
 
@@ -43,7 +43,7 @@ const routes = [
                 component: jiepouContent
             },
             {
-                path:'/home/jiepoudynamic/dynamicMore',
+                path:'/home/dynamicMore',
                 component:dynamicMore
             },
             {

@@ -1,7 +1,9 @@
 <template>
-<div style="margin: 4vw 0;width: 100%;height: auto;">
+<div style="width: 100%;height: auto;">
     <div style="width: 100%;height: auto;">
-        <div style="background-color: #2d9afa;width: 100%;height: 23.125vw"></div>
+        <div style="width: 100%;height: 23.125vw">
+            <img src="../components/vesalservice/img/hezuozhaomu.png" v-bind:style="{width: windowWidth,height: windowHeight}">
+        </div>
     </div>
     <div style="padding: 0 18.75vw;">
         <div style="margin: 4vw 10vw">
@@ -75,6 +77,12 @@
     import scrollReveal from 'scrollreveal';
 
     export default {
+        data(){
+            return{
+                windowWidth: (document.documentElement.clientWidth) + 'px',  //实时屏幕宽度
+                windowHeight: (((document.documentElement.clientWidth) * 444) / 1920) + 'px',   //实时屏幕高度
+            }
+        },
         mounted(){
             //第一种写法，可以设置wow中属性
             this.$nextTick(() => { // 在dom渲染完后,再执行动画
