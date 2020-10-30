@@ -159,7 +159,8 @@ export default {
         // },
 
         {
-          authName: "维萨里服务"
+          authName: "维萨里服务",
+          path: "/home/vesalService"
         },
         {
           authName: "关于我们",
