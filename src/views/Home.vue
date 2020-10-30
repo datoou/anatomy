@@ -214,7 +214,7 @@ export default {
   width: 100%;
 }
 .Footer {
-  margin-top: 60px;
+
   background: #f5f5f5;
   color: #333;
   text-align: center;

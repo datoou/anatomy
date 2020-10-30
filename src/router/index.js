@@ -9,6 +9,7 @@ import jiepouContent from '../components/jiepouContent/index'
 import aboutUs from "../components/aboutUs/aboutUs";
 import vesalService from "../views/VesalService";
 import dynamicMore from "../components/jiepoudynamic/dynamicMore";
+import partner from "../views/Partner";
 
 Vue.use(VueRouter)
 
@@ -53,7 +54,12 @@ const routes = [
             {
                 path:'/home/vesalService',
                 component:vesalService
-            }
+            },
+            {
+                path:'/home/partner',
+                component:partner
+            },
+
         ]
     }
 
