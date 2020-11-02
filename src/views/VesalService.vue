@@ -111,10 +111,10 @@
 
             <div style="background-color: #F2F2F2">
                 <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-top: 1.5vw;padding-bottom: 1.5vw"> — 合作条件及流程 — </div>
-                <div style="text-align: center;margin: 2vw ">
+                <div style="text-align: center;margin: 2vw;display: flex;flex-direction: column;align-items: center">
                     <img src="../components/vesalservice/img/vesalService01.png" style="width: 35vw;height: auto;">
                     <img src="../components/vesalservice/img/liucheng.png" style="width: 35vw;height: auto;margin-top: 2vw">
-                    <div style="width: 37vw;height: auto;display: flex;margin: 0 auto">
+                    <div style="width: 37vw;height: auto;display: flex;margin: 0 auto;margin-top: 2vw;margin-bottom: 2vw">
                         <div style="width: 3.75vw;font-size: 0.4vw;margin: 0 auto">提交申请</div>
                         <div style="width: 3.75vw;font-size: 0.4vw;margin: 0 auto">合作洽谈</div>
                         <div style="width: 3.75vw;font-size: 0.4vw;margin: 0 auto">签订协议</div>
@@ -125,8 +125,8 @@
             </div>
             </div>
 
-            <div class="serviceBottom" style="width: 100%;text-align: center;margin-top: 3vw">
-                <router-link to="/home/partner"><img src="../components/vesalservice/img/qiyehezuo.png" style="width: 15.46875vw;height: auto"></router-link>
+            <div class="serviceBottom" style="width: 100%;text-align: center;margin-top: 3vw;margin-bottom: 3vw">
+                <router-link to="/home/partner"><img src="../components/vesalservice/img/qiyehezuo.png" style="width: 200px;height: auto"></router-link>
             </div>
         </div>
     </div>

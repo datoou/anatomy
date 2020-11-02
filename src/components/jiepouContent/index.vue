@@ -135,8 +135,8 @@ export default {
           title: '健康养生吃什么'
         },
       ],
-      windowWidth: (document.documentElement.clientWidth - 10) + 'px',  //实时屏幕宽度
-      windowHeight: (((document.documentElement.clientWidth - 10) * 444) / 1920) + 'px',   //实时屏幕高度
+      windowWidth: (document.documentElement.clientWidth ) + 'px',  //实时屏幕宽度
+      windowHeight: (((document.documentElement.clientWidth ) * 444) / 1920) + 'px',   //实时屏幕高度
       bannerAppData: [
         {
           id: 1,

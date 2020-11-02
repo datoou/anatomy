@@ -1,8 +1,8 @@
 <template>
     <div class="download">
         <div class="appDownload">
-            <div style="font-size: 25px;font-weight:500;margin: 10px 0">APP下载</div>
-            <div style="color: #707070">请到手机应用商店（小米应用商店、vivo应用市场、OPPO商店、华为应用市场、应用宝等均可下载），搜索我们的应用名称即可下载</div>
+            <div style="font-size: 25px;font-weight:500;margin: 10px 0 10px 80px;">APP下载</div>
+            <div style="color: #707070;margin-left: 80px">请到手机应用商店（小米应用商店、vivo应用市场、OPPO商店、华为应用市场、应用宝等均可下载），搜索我们的应用名称即可下载</div>
             <div class="ewmDownload" >
                 <div class="listItem" v-for="(item,index) in ewmDownload" :key="index">
                     <a :href="item.path"><img :src="item.ewm" style="width: 120px;height: 120px"></a>
@@ -92,12 +92,11 @@
     margin: 40px 360px;
     display: flex;
     flex-direction: column;
-    /*background: skyblue;*/
+    align-items: center;
     .appDownload{
         margin-top: 50px;
         display: flex;
         flex-direction: column;
-        /*background: red;*/
         .ewmDownload{
             margin-top: 40px;
             display: flex;
