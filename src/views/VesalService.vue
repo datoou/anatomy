@@ -79,8 +79,8 @@
                 </div>
 
                 <div style="font-size: 1.25vw;color: #2d9afa;text-align: center;margin-top: 7vw">—— 维萨里三大内容体系 ——</div>
-                <div style="width: 100%;">
-                    <el-tabs>
+                <div style="width: 100%;" class="serviceTabs">
+                    <el-tabs >
                         <el-tab-pane label="3D人体结构">
                             <el-card style="width: 35vw;height: auto;margin: 1vw auto">
                                 <div style="margin:2vw 3vw">
@@ -189,16 +189,16 @@
 </script>
 
 <style>
-    .el-tabs__nav-wrap.is-top {
+    .serviceTabs .el-tabs__nav-wrap.is-top {
         width: 100%;
     }
 
-    .el-tabs__nav-scroll {
+    .serviceTabs .el-tabs__nav-scroll {
         width: 36vw;
         margin: 4vw auto;
     }
 
-    .el-tabs__nav.is-top {
+    .serviceTabs .el-tabs__nav.is-top {
         width: 35vw;
         border-style: solid;
         border-color: #2d9afa;
@@ -206,12 +206,12 @@
     }
 
     /*选中tab的文字框样式*/
-    .el-tabs__item.is-active {
+    .serviceTabs .el-tabs__item.is-active {
         color: white !important;
     }
 
     /*文字框样式*/
-    .el-tabs__item.is-top {
+    .serviceTabs .el-tabs__item.is-top {
         text-align: center !important;
         font-size: 1vw !important;
         padding: 0 !important;
@@ -220,7 +220,7 @@
     }
 
     /*滑动框样式*/
-    .el-tabs__active-bar.is-top {
+    .serviceTabs .el-tabs__active-bar.is-top {
         height: 100% !important;
         z-index: 0 !important;
         width: 34%;

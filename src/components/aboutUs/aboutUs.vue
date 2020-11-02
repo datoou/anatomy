@@ -22,7 +22,7 @@
                     <div style="width: 35%;font-size: 1.5vw;font-weight: normal;color:#ffffff ;border-right-style:solid;border-color: #ffffff;border-width:1px;margin: auto 0;">提出问题</div>
                     <div style="width: 65%;font-size: 1.5vw;font-weight: normal;color:#ffffff;margin: auto 0;">解决方案</div>
                 </div>
-                <el-tabs tab-position="left" style="height: 25.52vw;">
+                <el-tabs class="aboutUsTabs" tab-position="left" style="height: 25.52vw;">
                     <el-tab-pane label="【学习方向】学生上课很难快速理解所学的大量内容">
                         <div class="tab-right-title">学生更容易接受</div>
                         <div class="tab-right-text">在课堂学习之于，可以在这里进行复习，并且学习到而外的东西</div>
@@ -217,11 +217,11 @@
 </style>
 
 <style>
-    .el-tabs__item.is-left{
+
+    .aboutUsMid1 .el-tabs__item.is-left{
         height: 25% !important;
     }
-
-    .el-tabs__item{
+    .aboutUsMid1 .el-tabs__item{
         font-size: 1.25vw !important;
         line-height: 2em !important;
         padding: 0.8vw 1.0416vw !important;
@@ -230,15 +230,15 @@
         white-space:normal;
     }
 
-    .el-tabs__header.is-left{
+    .aboutUsMid1 .el-tabs__header.is-left{
         width: 35%;
     }
 
-    .el-tabs__nav.is-left{
+    .aboutUsMid1 .el-tabs__nav.is-left{
         height: 100% !important;
     }
 
-    .el-tabs__active-bar.is-left{
+    .aboutUsMid1 .el-tabs__active-bar.is-left{
         width: 0.15625vw !important;
         right: auto !important;
         left: 0 !important;
