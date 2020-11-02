@@ -23,10 +23,10 @@
                     <div style="width: 65%;font-size: 1.5vw;font-weight: normal;color:#ffffff;margin: auto 0;">解决方案</div>
                 </div>
                 <el-tabs class="aboutUsTabs" tab-position="left" style="height: 25.52vw;">
-                    <el-tab-pane label="【学习方向】学生上课很难快速理解所学的大量内容">
+                    <el-tab-pane label="【学习方向】学生上课很难快速理解所学的大量内容" >
                         <div class="tab-right-title">学生更容易接受</div>
                         <div class="tab-right-text">在课堂学习之于，可以在这里进行复习，并且学习到而外的东西</div>
-                        <img src="http://www.vesal.cn:8080/vesal//public/images/problem1.png" style="width: 100%;height: auto">
+                        <img src="http://www.vesal.cn:8080/vesal//public/images/problem1.png" style="width: 100%;height: auto;">
                     </el-tab-pane>
                     <el-tab-pane label="【实验方向】实验课时，传统的实验不能营造出逼真的效果">
                         <div class="tab-right-title">辅助实验室</div>

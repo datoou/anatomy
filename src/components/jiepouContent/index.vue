@@ -15,6 +15,7 @@
         </el-carousel-item>
       </el-carousel>
     </div>
+
     <div class="contentMid">
       <!--APP切换-->
       <div class="appSwitch">
@@ -46,7 +47,7 @@
                        v-for="appitem in bannerAppData"
                        :key="appitem.id">
             <div class="appInfo">
-              <div class="appInfoTop">
+              <div class="appInfoTop" >
                 <div class="title">{{appitem.bannerAppTitle}}</div>
                 <div class="content">{{appitem.bannerAppContent}}</div>
               </div>
@@ -57,17 +58,17 @@
                            type="card">
                     <el-tab-pane v-for="item in appitem.lsit">
                       <div slot="label"
-                           style="display: flex;flex-direction: column;height: 82px;justify-content: space-around">
-                        <div class="list">
+                           style="display: flex;flex-direction: column;height: 82px;justify-content: space-around;">
+                        <div class="list" >
                           <span class="list1">{{item.id}}</span>
                           <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.title1}}</span>
                         </div>
-                        <div style="font-size: 1vm;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default">
+                        <div style="font-size: 1vm;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default;" >
                           {{item.title2}}
                         </div>
                       </div>
                       <img :src="item.appinfo"
-                           style="width: 29vw;height:29vw;">
+                           style="width: 29vw;height:29vw;" >
                     </el-tab-pane>
                   </el-tabs>
                 </div>
@@ -416,7 +417,7 @@ export default {
 /*轮播*/
 .banner {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 59px;
 }
 .banner .el-carousel__container {
   /*height: 23.125vw !important;*/
