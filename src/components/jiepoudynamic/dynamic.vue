@@ -6,21 +6,23 @@
         </div>
 
         <div class="dynamicContent">
-                    <el-row>
-                        <el-col :span="12" v-for="(cardItem,index) in dynamicData" :key="cardItem.id+index" >
-                            <el-card
-                                    class="reveal-top"
-                                    :body-style="{ padding: '0px',marginBottom:'10px',width:'30.47vw',display:'flex',flexDirection:'column' }">
-                                <div class="list">
-                                    <img :src="cardItem.bg" style="width: 10vw;height: 10vw">
-                                    <div class="listContent">
-                                        <div class="title">{{cardItem.title}}</div>
-                                        <div class="content">{{cardItem.content}}</div>
-                                    </div>
+            <el-row>
+                <el-col :span="12" v-for="(cardItem,index) in dynamicData" :key="cardItem.id+index" >
+                    <el-card
+                            class="reveal-top"
+                            :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
+                        <div class="list" >
+                            <img :src="cardItem.bg" style="width: 50.52vw;height: 13.02vw">
+                            <div style="position:absolute;">
+                                <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center">
+                                    <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
                                 </div>
-                            </el-card>
-                        </el-col>
-                    </el-row>
+                            </div>
+                        </div>
+                    </el-card>
+                </el-col>
+
+            </el-row>
 
                 <!--分割线-->
                 <el-divider class="reveal-top"></el-divider>
@@ -111,13 +113,13 @@
             .list{
                 height:13vw;
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 img{
-                    margin: 0 1.5vw;
+                    /*margin: 0 1.5vw;*/
                 }
                 .listContent{
-                    width: 16vw;
-                    height: 10vw;
+                    /*width: 16vw;*/
+                    /*height: 10vw;*/
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
