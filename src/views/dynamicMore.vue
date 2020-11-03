@@ -2,15 +2,15 @@
     <div class="jiepoudynamic">
         <div class="top">
             <img class="reveal-top" src="../components/jiepoudynamic/img/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
-        </div>x
+        </div>
         <div class="dynamicContent">
             <el-row>
-                <el-col :span="12" v-for="(cardItem,index) in dynamicData" :key="cardItem.id+index" >
+                <el-col :span="12" v-for="(cardItem,index) in dynamicData" >
                     <el-card
                             class="reveal-top"
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
                         <div class="list" >
-                            <img :src="cardItem.bg" style="width: 50.52vw;height: 13.02vw">
+                            <img :src="cardItem.pic_url" style="width: 50.52vw;height: 13.02vw">
                             <div style="position:absolute;">
                                 <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center">
                                     <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
@@ -54,51 +54,34 @@
                 pagenum:1,
                 pagesize:6,
                 total:40,
-                dynamicData:[
-                    {
-                        id:1,
-                        bg:require('../components/jiepoudynamic/img/tu1.png'),
-                        title:'维萨里解剖大升级',
-                        // content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    },
-                    {
-                        id:2,
-                        bg:require('../components/jiepoudynamic/img/tu2.png'),
-                        title:'系统解剖微课',
-                        content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    },
-                    {
-                        id:3,
-                        bg:require('../components/jiepoudynamic/img/tu3.png'),
-                        title:'系统解剖微课',
-                        content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    },
-                    {
-                        id:4,
-                        bg:require('../components/jiepoudynamic/img/tu4.png'),
-                        title:'系统解剖微课',
-                        content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    },
-                    {
-                        id:5,
-                        bg:require('../components/jiepoudynamic/img/tu1.png'),
-                        title:'系统解剖微课',
-                        content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    },
-                    {
-                        id:6,
-                        bg:require('../components/jiepoudynamic/img/tu2.png'),
-                        title:'系统解剖微课',
-                        content:'旁白：身体腹部的肌肉在腰腹部环绕形似一条腰带，保护和稳定脊柱。当我们需要“腰带”对腹部进行支撑时，肌肉将会立刻被激活。（腹部肌肉闪烁，环绕周身如同一个腰带一样）一旦腹部前侧腹肌收紧（此时建立单腹肌收缩时脊柱活动模型，'
-                    }
-                ]
+                dynamicData:[]
             }
+        },
+        created() {
+            this.getDataList()
         },
         methods:{
             //监听页码值改变的事件
             handleCurrentChange(newPage){
-                console.log(newPage)
-                // this.pagenum = newPage
+                this.pagenum = newPage
+                this.getDataList()
+            },
+            getDataList(){
+                this.$http({
+                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webdynamic/getDynamicList',
+                    method: 'post',
+                    data:{
+                        'page': this.pagenum,
+                        "limit":this.pagesize
+                    }
+                }).then(({data}) => {
+                    if (data && data.code === 0) {
+                        this.dynamicData=data.dynamicList
+                        this.total=data.dynamicCount
+                    } else {
+                        this.$message.error('error!')
+                    }
+                })
             }
         }
     }

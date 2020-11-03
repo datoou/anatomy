@@ -307,7 +307,10 @@ export default {
     addActivityCode () {
       this.$http({
         url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getAll',
-        method: 'get',
+        method: 'post',
+        data:{
+          "limit":6
+        }
       }).then(({data}) => {
         if (data && data.code === 0) {
           this.bannerData=data.carouselList
