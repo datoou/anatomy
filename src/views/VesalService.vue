@@ -1,18 +1,18 @@
 <template>
 <div style="width: 100%;height: auto;">
     <div style="width: 100%;height: auto; margin-top: 59px;">
-            <img src="../components/vesalservice/img/hezuozhaomu.png" v-bind:style="{width: windowWidth,height: windowHeight}">
+            <img src="http://res.vesal.site/newWebsiteImg/hezuozhaomu.png" v-bind:style="{width: windowWidth,height: windowHeight}">
     </div>
     <div style="">
         <div style="width: 100%;display: flex;justify-content: center;height:auto">
-               <img src="../components/vesalservice/img/server1.png" style="width: 750px;height: auto">
+               <img src="http://res.vesal.site/newWebsiteImg/server1.png" style="width: 750px;height: auto">
         </div>
         <div style="width: 100%;">
 <!--            李哲-->
             <div style="background-color: #F2F2F2">
                 <div style="font-size: 1vw;color: #1292E4;text-align: center;padding-top: 1.5vw;padding-bottom: 1.5vw"> — 李哲教你学解剖案例 — </div>
                 <el-card style="width: 35vw;height: auto;border-style:solid;border-color: #2d9afa;border-width: 3px;margin:auto;background-color: #F2F2F2;">
-                        <img src="../components/vesalservice/img/lizhe.png" style="width: 100%;height: auto;" >
+                        <img src="http://res.vesal.site/newWebsiteImg/lizhe.png" style="width: 100%;height: auto;" >
                 </el-card>
                 <div style="width: 29vw;height: auto;margin: 2vw auto">
                     <div style="font-size: 1vw;color: #000203;line-height: 1.7vw">李哲是广东医科大学李哲人体工作室主任、李哲教你学解剖专栏 创始人。</div>
@@ -24,7 +24,9 @@
 
             <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw"> — 龙脊康龙氏正骨案例 — </div>
             <el-card style="width: 28vw;height: auto;margin: 1vw auto">
-                <img src="../components/vesalservice/img/longjikang01.png" style="width: 100%;height: auto;" >
+<!--                <img src="../components/vesalservice/img/longjikang01.png" style="width: 100%;height: auto;" >-->
+                <video src="../components/vesalservice/img/longjikang.mp4" controls autoplay class="video" :ref="dialogVideo"
+                       width="100%"></video>
             </el-card>
             <div style="width: 29vw;height: auto;margin: 2vw auto">
                 <div style="font-size: 1vw;color: #000203;line-height: 1.7vw">龙脊康，是中国最专业的脊柱专科医疗机构之一，并致力于科普 脊柱健康常识。龙脊康采用专业的治疗手段服务于广大受脊柱病 困扰的客户，并全面培养脊柱病医疗专业人才。</div>
@@ -34,7 +36,7 @@
             <div style="background-color: #F2F2F2">
                 <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw;padding-top: 1.5vw;"> — 郑大解剖工作室案例 — </div>
                 <el-card style="width: 35vw;height: auto;border-style:solid;border-color: #2d9afa;border-width: 3px;margin:auto;background-color: #F2F2F2;">
-                    <img src="../components/vesalservice/img/zhengda.png" style="width: 100%;height: auto;" >
+                    <img src="http://res.vesal.site/newWebsiteImg/zhengda.png" style="width: 100%;height: auto;" >
                 </el-card>
                 <div style="width: 29vw;height: auto;margin: 2vw auto">
                     <div style="font-size: 1vw;color: #000203;line-height: 1.7vw">郑大解剖以徐高磊老师为龙头，在医学疼痛教学领域拥有广泛的 影响力。</div>
@@ -45,7 +47,7 @@
 
             <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw"> — 西安仲德骨科医院案例 — </div>
             <el-card style="width: 29vw;height: auto;margin: 1vw auto">
-                <img src="../components/vesalservice/img/xianzhongdei.png" style="width: 100%;height: auto;" >
+                <img src="http://res.vesal.site/newWebsiteImg/xianzhongdei.png" style="width: 100%;height: auto;" >
             </el-card>
             <div style="width: 29vw;height: auto;margin:3vw auto;">
                 <div style="font-size: 1vw;color: #000203;line-height: 1.7vw;margin: 1vw 0;">西安仲德骨科医院是按三级医院标准兴建的综合骨科专科医院，基于维萨里解剖大师的专业性以及精准性，维萨里与仲德骨科医院达成了战略合作，并为其提供了骨科常见病医患沟通成因和手术动画、3D人体结构，帮助患者更清楚的了解病因以及手术过程。并且为医生提供了开具运动康复处方的工具，为医患沟通、医生的临床工作提供了极大地帮助。</div>
@@ -54,7 +56,7 @@
             <div style="background-color: #F2F2F2">
             <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw;padding-top: 1.5vw;"> — 苏景峰正骨案例 — </div>
             <el-card style="width: 35vw;height: auto;border-style:solid;border-color: #2d9afa;border-width: 3px;margin:auto;background-color: #F2F2F2;">
-                <img src="../components/vesalservice/img/sujingfeng01.png" style="width: 100%;height: auto;" >
+                <img src="http://res.vesal.site/newWebsiteImg/sujingfeng01.png" style="width: 100%;height: auto;" >
             </el-card>
             <div style="width: 29vw;height: auto;margin: 2vw auto">
                 <div style="font-size: 1vw;color: #000203;line-height: 1.7vw;margin: 1vw 0;padding-bottom: 2vw">医学解剖教学是维萨里解剖大师应用最广泛的一个场景，被数百家医疗培训机构作为教学演示工具而应用。维萨里解剖大师为苏景峰正骨提供了多套教学应用课件以及正版授权的3D解剖应用，帮助其在教学演示过程中能够更加生动形象的展示教学内容， 对其教学输出有了极大的提升。同时维萨里解剖大师也获得了广大学员的认可，通过课程内容分销的形式给苏景峰正骨带来了可观的经济收益。</div>
@@ -63,7 +65,7 @@
 
                 <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw"> — 出版行业AR解决方案 — </div>
                 <el-card style="width: 31vw;height: auto;margin: 1vw auto">
-                    <img src="../components/vesalservice/img/AR.png" style="width: 100%;height: auto;">
+                    <img src="http://res.vesal.site/newWebsiteImg/AR.png" style="width: 100%;height: auto;">
                 </el-card>
                 <div style="width: 29vw;height: auto;margin: 2vw auto">
                     <div style="font-size: 1vw;color: #000203;line-height: 1.7vw;margin: 1vw 0;">为了加快医疗出版行业现代化建设， 推进新时代医疗出版信息化， 借助大数据、人工智能、 虚拟现实与医疗出版深入融合的发展现
@@ -80,7 +82,7 @@
                                 <div style="margin:2vw 3vw;font-size: 0.9vw;line-height: 1.7vw">
                                     完整人体解剖模型、超过15000个交互结构。涵盖系统、 局部、临床、经脉、触发点等数个方向助您精准学习。 实时肌肉运动、起止点结构、骨骼基本结构和标志映射， 多层结构，更有3D解剖经络腧穴，3D模型触发点3D模型 测验等独有模块。
                                 </div>
-                                <img src="../components/vesalservice/img/3Drenti.png" style="width: 70%;height: auto;margin-left: 15%;margin-right: 15%">
+                                <img src="http://res.vesal.site/newWebsiteImg/3Drenti.png" style="width: 70%;height: auto;margin-left: 15%;margin-right: 15%">
                             </el-card>
                         </el-tab-pane>
                         <el-tab-pane label="医学动画">
@@ -88,7 +90,11 @@
                                 <div style="margin:2vw 3vw">
                                     1000+ 3D动作姿态库，涵盖健身、瑜伽、普拉提、运动康复等领域 。方便医生/教练/理疗师等专业人员开具定制化的运动康复方案。
                                 </div>
-                                <img src="../components/vesalservice/img/AR.png" style="width: 100%;height: auto;">
+<!--                                <img src="http://res.vesal.site/newWebsiteImg/AR.png" style="width: 100%;height: auto;">-->
+                                <div style="align-items: center;display: flex;justify-content: center" >
+                                    <video src="../components/vesalservice/img/donghua.mp4" controls autoplay :ref="dialogVideo"
+                                           width="50%"></video>
+                                </div>
                             </el-card>
                         </el-tab-pane>
                         <el-tab-pane label="动作姿态库">
@@ -96,7 +102,7 @@
                                 <div style="margin:2vw 3vw;font-size: 0.9vw;line-height: 1.7vw">
                                     300个医学动画，基于临床、生动形象的医学成因/手术动画，解决医患沟通和学生学习掌握重点难点。更有利于患者了解疾病/手术的发生发展过程。
                                 </div>
-                                <img src="../components/vesalservice/img/dongzuoku.png" style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%">
+                                <img src="http://res.vesal.site/newWebsiteImg/dongzuoku.png" style="width: 80%;height: auto;margin-left: 10%;margin-right: 10%">
                             </el-card>
                         </el-tab-pane>
                     </el-tabs>
@@ -106,14 +112,14 @@
 
                 <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-top: 2vw;padding-bottom: 2vw"> — 维萨里服务体系 — </div>
                 <div style="text-align: center;padding-bottom: 4vw">
-                        <img src="../components/vesalservice/img/vesalService.png" style="width: 35vw;height: auto;">
+                        <img src="http://res.vesal.site/newWebsiteImg/vesalService.png" style="width: 35vw;height: auto;">
                 </div>
 
             <div style="background-color: #F2F2F2">
                 <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-top: 1.5vw;padding-bottom: 1.5vw"> — 合作条件及流程 — </div>
                 <div style="text-align: center;margin: 2vw;display: flex;flex-direction: column;align-items: center">
-                    <img src="../components/vesalservice/img/vesalService01.png" style="width: 35vw;height: auto;">
-                    <img src="../components/vesalservice/img/liucheng.png" style="width: 35vw;height: auto;margin-top: 2vw">
+                    <img src="http://res.vesal.site/newWebsiteImg/vesalService01.png" style="width: 35vw;height: auto;">
+                    <img src="http://res.vesal.site/newWebsiteImg/liucheng.png" style="width: 35vw;height: auto;margin-top: 2vw">
                     <div style="width: 37vw;height: auto;display: flex;margin: 0 auto;margin-top: 2vw;margin-bottom: 2vw">
                         <div style="width: 3.75vw;font-size: 0.4vw;margin: 0 auto">提交申请</div>
                         <div style="width: 3.75vw;font-size: 0.4vw;margin: 0 auto">合作洽谈</div>
@@ -126,10 +132,9 @@
             </div>
 
             <div class="serviceBottom" style="width: 100%;text-align: center;margin-top: 3vw;margin-bottom: 3vw">
-                <router-link to="/home/partner"><img src="../components/vesalservice/img/qiyehezuo.png" style="width: 200px;height: auto"></router-link>
+                <router-link to="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png" style="width: 200px;height: auto"></router-link>
             </div>
         </div>
-    </div>
 </template>
 
 <script>

@@ -53,35 +53,37 @@
               </div>
 
               <div class="appInfoBottom">
-                <div class="appInfoBottomList">
-                  <el-tabs tab-position="left"
-                           type="card">
-                    <el-tab-pane v-for="item in appitem.lsit">
-                      <div slot="label"
-                           style="display: flex;flex-direction: column;height: 82px;justify-content: space-around;">
-                        <div class="list" >
-                          <span class="list1">{{item.id}}</span>
-                          <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.title1}}</span>
-                        </div>
-                        <div style="font-size: 1vm;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default;" >
-                          {{item.title2}}
-                        </div>
-                      </div>
-                      <img :src="item.appinfo"
-                           style="width: 29vw;height:29vw;" >
-                    </el-tab-pane>
-                  </el-tabs>
-                </div>
-                <div class="appInfoBottomRight">
-                  <div class="img">
-                    <a href=""><img src="../jiepouContent/img/Android.png"
-                           style="width: 8vw;height: 2.5vw"></a>
-                    <a href=""><img src="../jiepouContent/img/PC.png"
-                           style="width: 8vw;height: 2.5vw"></a>
-                    <a href=""><img src="../jiepouContent/img/PC.png"
-                           style="width: 8vw;height: 2.5vw"></a>
-                  </div>
-                </div>
+<!--                <div class="appInfoBottomList">-->
+<!--                  <el-tabs tab-position="left"-->
+<!--                           type="card">-->
+<!--                    <el-tab-pane v-for="item in appitem.lsit">-->
+<!--                      <div slot="label"-->
+<!--                           style="display: flex;flex-direction: column;height: 82px;justify-content: space-around;">-->
+<!--                        <div class="list" >-->
+<!--                          <span class="list1">{{item.id}}</span>-->
+<!--                          <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.title1}}</span>-->
+<!--                        </div>-->
+<!--                        <div style="font-size: 1vm;margin: 0 18px;text-align: center;letter-spacing: 2px;cursor: default;" >-->
+<!--                          {{item.title2}}-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <img :src="item.appinfo"-->
+<!--                           style="width: 29vw;height:29vw;" >-->
+<!--                    </el-tab-pane>-->
+<!--                  </el-tabs>-->
+                  <video src="../jiepouContent/img/jiepoudashi.mp4" controls autoplay :ref="dialogVideo" poster="../jiepouContent/img/shipinjietu.png"
+                         width="100%"></video>
+<!--                </div>-->
+<!--                <div class="appInfoBottomRight">-->
+<!--                  <div class="img">-->
+<!--                    <a href=""><img src="../jiepouContent/img/Android.png"-->
+<!--                           style="width: 8vw;height: 2.5vw"></a>-->
+<!--                    <a href=""><img src="../jiepouContent/img/PC.png"-->
+<!--                           style="width: 8vw;height: 2.5vw"></a>-->
+<!--                    <a href=""><img src="../jiepouContent/img/PC.png"-->
+<!--                           style="width: 8vw;height: 2.5vw"></a>-->
+<!--                  </div>-->
+<!--                </div>-->
               </div>
             </div>
           </el-tab-pane>

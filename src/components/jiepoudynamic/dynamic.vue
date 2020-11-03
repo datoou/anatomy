@@ -9,13 +9,14 @@
             <el-row>
                 <el-col :span="12" v-for="(cardItem,index) in dynamicData"  >
                     <el-card
+
                             class="reveal-top"
-                            :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
-                        <div class="list" >
-                            <img :src="cardItem.pic_url" style="width: 50.52vw;height: 13.02vw">
+                            :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column',}">
+                        <div class="list">
+                            <img :src="cardItem.pic_url" style="width: 29.8vw;height: 13.02vw;">
                             <div style="position:absolute;">
-                                <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center">
-                                    <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
+                                <div style="height: 50px;background-color:rgba(0,0,0,0.4);display: flex;align-items: center;width: 29.8vw">
+                                    <p style="color: #fff;padding-left: 1vw">{{cardItem.title}}</p>
                                 </div>
                             </div>
                         </div>
@@ -85,9 +86,9 @@
 </script>
 <style scoped lang="less">
     .jiepoudynamic{
-        padding: 0 18.75vw;
+        padding:  0 17.75vw;
         .top{
-            margin: 4vw 0 0 0;
+            margin: 4vw 1.5vw 1vw 0.5vw;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -95,7 +96,7 @@
         }
         .dynamicContent{
             .list{
-                height:13vw;
+                /*height:13vw;*/
                 display: flex;
                 align-items: flex-end;
                 img{
@@ -130,6 +131,8 @@
     .dynamicContent .el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover{
         box-shadow: none !important;
         border: none;
+        /*background-color: red;*/
+
     }
     .dynamicContent .el-card__body{
         margin-bottom: 52px;
@@ -137,6 +140,7 @@
     }
     .dynamicContent .el-card__body:hover{
         background-image: url("../jiepoudynamic/img/zixunxuanzhong.png");
+        background-repeat: no-repeat;
         background-size: 30.64vw 13.77vw;
         cursor: pointer;
         border-radius: 0;
