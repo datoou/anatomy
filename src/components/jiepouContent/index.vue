@@ -71,7 +71,7 @@
 <!--                           style="width: 29vw;height:29vw;" >-->
 <!--                    </el-tab-pane>-->
 <!--                  </el-tabs>-->
-                  <video src="../jiepouContent/img/jiepoudashi.mp4" controls autoplay :ref="dialogVideo" poster="../jiepouContent/img/shipinjietu.png"
+                  <video src="http://res.vesal.site/newWebsiteImg/jiepoudashi.mp4" controls  :ref="dialogVideo" poster="http://res.vesal.site/newWebsiteImg/shipinjietu.png"
                          width="100%"></video>
 <!--                </div>-->
 <!--                <div class="appInfoBottomRight">-->

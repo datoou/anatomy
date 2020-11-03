@@ -25,7 +25,7 @@
             <div style="font-size: 1vw;color: #2d9afa;text-align: center;padding-bottom: 1.5vw"> — 龙脊康龙氏正骨案例 — </div>
             <el-card style="width: 28vw;height: auto;margin: 1vw auto">
 <!--                <img src="../components/vesalservice/img/longjikang01.png" style="width: 100%;height: auto;" >-->
-                <video src="../components/vesalservice/img/longjikang.mp4" controls autoplay class="video" :ref="dialogVideo"
+                <video src="http://res.vesal.site/newWebsiteImg/longjikang.mp4" controls  class="video" :ref="dialogVideo"
                        width="100%"></video>
             </el-card>
             <div style="width: 29vw;height: auto;margin: 2vw auto">
@@ -92,7 +92,7 @@
                                 </div>
 <!--                                <img src="http://res.vesal.site/newWebsiteImg/AR.png" style="width: 100%;height: auto;">-->
                                 <div style="align-items: center;display: flex;justify-content: center" >
-                                    <video src="../components/vesalservice/img/donghua.mp4" controls autoplay :ref="dialogVideo"
+                                    <video src="http://res.vesal.site/newWebsiteImg/donghua.mp4" controls   :ref="dialogVideo"
                                            width="50%"></video>
                                 </div>
                             </el-card>
