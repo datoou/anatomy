@@ -10,7 +10,7 @@
                           :key="item.title"
                           :label="item.title"
                           v-bind:style="{width: windowWidth,height: windowHeight}">
-          <img :src="item.banner"
+          <img :src="item.pic_url"
                v-bind:style="{width: windowWidth,height: windowHeight}" />
         </el-carousel-item>
       </el-carousel>
@@ -109,32 +109,7 @@ export default {
   data () {
     return {
       active_Name: '1',
-      bannerData: [
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '让你成为解剖大师'
-        },
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '肌肉是怎样运动的'
-        },
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '专家教你学解剖'
-        },
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '健身之旅'
-        },
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '我们一起扭一扭'
-        },
-        {
-          banner: require('../jiepouContent/img/banner1.png'),
-          title: '健康养生吃什么'
-        },
-      ],
+      bannerData: [],
       windowWidth: (document.documentElement.clientWidth ) + 'px',  //实时屏幕宽度
       windowHeight: (((document.documentElement.clientWidth ) * 444) / 1920) + 'px',   //实时屏幕高度
       bannerAppData: [
@@ -319,7 +294,7 @@ export default {
   created: function () {
     console.log(this.windowWidth)
     console.log(this.windowHeight)
-
+    this.addActivityCode ()
   },
   methods: {
     carouselChange (activeIndex, index) {
@@ -328,6 +303,19 @@ export default {
     },
     handleClick (tab, event) {
       console.log(tab, event);
+    },
+    addActivityCode () {
+      this.$http({
+        url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getAll',
+        method: 'get',
+      }).then(({data}) => {
+        if (data && data.code === 0) {
+          this.bannerData=data.carouselList
+        } else {
+          this.$message.error('error!')
+        }
+      })
+
     },
   },
 }
