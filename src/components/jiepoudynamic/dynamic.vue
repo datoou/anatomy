@@ -9,17 +9,16 @@
             <el-row>
                 <el-col :span="12" v-for="(cardItem,index) in dynamicData"  >
                     <el-card
-
                             class="reveal-top"
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column',}">
-                        <div class="list">
+                        <a class="list" :href="cardItem.web_url">
                             <img :src="cardItem.pic_url" style="width: 29.8vw;height: 13.02vw;">
                             <div style="position:absolute;">
                                 <div style="height: 50px;background-color:rgba(0,0,0,0.4);display: flex;align-items: center;width: 29.8vw">
                                     <p style="color: #fff;padding-left: 1vw">{{cardItem.title}}</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </el-card>
                 </el-col>
 
