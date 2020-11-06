@@ -66,7 +66,7 @@
                                                     <span class="list1">{{item.content_id}}</span>
                                                     <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.big_title}}</span>
                                                 </div>
-                                                <div style="font-size: 1vm;margin: 0 18px;text-align: left;letter-spacing: 2px;cursor: default;width: 13vw;height: auto;white-space:normal; line-height: 1.5em;">
+                                                <div style="font-size: 1vm;text-align: left;letter-spacing: 2px;cursor: default;width: 13vw;height: auto;white-space:normal; line-height: 1.5em;">
                                                    {{item.small_title}}
                                                 </div>
                                             </div>
@@ -254,7 +254,6 @@
                     border-radius: 10px;
                     display: flex;
                     align-items: center;
-
                     .list1 {
                         text-align: center;
                         font-size: 1vw;
@@ -311,7 +310,7 @@
     .banner .el-carousel__button {
         background: none !important;
         color: #fff;
-        margin-left: 50px;
+        margin:0 4vw;
     }
 
     .contentMid {

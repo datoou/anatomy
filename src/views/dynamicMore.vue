@@ -7,16 +7,17 @@
             <el-row>
                 <el-col :span="12" v-for="(cardItem,index) in dynamicData" >
                     <el-card
+
                             class="reveal-top"
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
-                        <div class="list" >
-                            <img :src="cardItem.pic_url" style="width: 50.52vw;height: 13.02vw">
+                        <a :href="cardItem.web_url" class="list">
+                            <img :src="cardItem.pic_url" style="width: 29.8vw;height: 13.02vw;cursor: pointer;transition: all 0.8s;">
                             <div style="position:absolute;">
-                                <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center">
+                                <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center;width: 29.8vw">
                                     <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </el-card>
                 </el-col>
 
@@ -89,7 +90,7 @@
 
 <style scoped lang="less">
     .jiepoudynamic{
-        padding: 0 18.75vw;
+        padding: 0 17.75vw;
         .top{
             margin: 7vw 0 0 0;
             display: flex;
@@ -102,11 +103,13 @@
                 height:13vw;
                 display: flex;
                 align-items:flex-end;
+                width: 29.8vw;
+                height: 13.02vw;
                 /*margin-left: 2%;*/
                 /*margin-right: 2%;*/
-
-                img{
-                    /*margin: 0 1.5vw;*/
+                overflow: hidden;
+                img:hover {
+                    transform: scale(1.1);
                 }
                 .listContent{
                     /*width: 16vw;*/
@@ -174,5 +177,6 @@
     .dynamicContent .el-divider--horizontal{
         margin: 0 0 24px 0 !important;
     }
+
 
 </style>

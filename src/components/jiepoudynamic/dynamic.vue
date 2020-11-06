@@ -12,7 +12,7 @@
                             class="reveal-top"
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column',}">
                         <a class="list" :href="cardItem.web_url">
-                            <img :src="cardItem.pic_url" style="width: 29.8vw;height: 13.02vw;">
+                            <img :src="cardItem.pic_url" style="width: 100%;height: 100%;cursor: pointer;transition: all 0.8s;">
                             <div style="position:absolute;">
                                 <div style="height: 50px;background-color:rgba(0,0,0,0.4);display: flex;align-items: center;width: 29.8vw">
                                     <p style="color: #fff;padding-left: 1vw">{{cardItem.title}}</p>
@@ -98,8 +98,11 @@
                 /*height:13vw;*/
                 display: flex;
                 align-items: flex-end;
-                img{
-                    /*margin: 0 1.5vw;*/
+                width: 29.8vw;
+                height: 13.02vw;
+                overflow: hidden;
+                img:hover{
+                    transform: scale(1.2);
                 }
                 .listContent{
                     /*width: 16vw;*/

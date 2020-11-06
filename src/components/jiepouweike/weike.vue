@@ -34,7 +34,9 @@
         </div>
       </div>
       <div class="appDownloud">
-        <span style="font-size: 1.5vw;margin-top: 10px;font-weight: bold;border-bottom: 2px solid #1292E4;text-decoration:none">下载手机app去学习</span>
+        <router-link :to="{path:'/home/download'}" style="font-size: 1.5vw;margin-top: 10px;font-weight: bold;border-bottom: 2px solid #1292E4;text-decoration:none;color: #000203">
+          下载手机app去学习
+        </router-link>
       </div>
     </div>
   </div>
@@ -103,4 +105,12 @@ export default {
     justify-content: space-between;
   }
 }
+</style>
+<style>
+  .router-link-active {
+    text-decoration: none;
+  }
+  a {
+    text-decoraction: none;
+  }
 </style>
