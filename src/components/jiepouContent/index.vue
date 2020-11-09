@@ -39,7 +39,7 @@
                 </el-carousel>
 
                 <div class="tabs">
-                    <img src="../jiepouContent/img/select.png"/>
+                    <img src="http://res.vesal.site/newWebsiteImg/select.png"/>
                 </div>
 
                 <el-tabs :value="active_Name"
@@ -143,7 +143,7 @@
             },
             addActivityCode() {
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getAll',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/getAll',
                     method: 'post',
                     data: {
                         "limit": 6
@@ -158,7 +158,7 @@
             },
             getWebAppHeadDate() {
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getHeadData',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/getHeadData',
                     method: 'post',
                     data: {
                         "app_id": this.app_id
@@ -174,7 +174,7 @@
             },
             getContentDate() {
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getHeadContent',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/getHeadContent',
                     method: 'post',
                     data: {
                         "app_id": this.app_id
@@ -204,7 +204,7 @@
     .appInfo {
         width: 100%;
         height: 37.5vw;
-        background-image: url('../jiepouContent/img/appdiwen.png');
+        background-image: url("http://res.vesal.site/newWebsiteImg/appdiwen.png");
         background-size: 100% 37.5vw;
         display: flex;
         flex-direction: column;
@@ -304,7 +304,7 @@
         margin-right: auto;
         margin-left: auto;
         height: 40px;
-        background: url('../jiepouContent/img/banner name.png') no-repeat center;
+        background: url('http://res.vesal.site/newWebsiteImg/banner name.png') no-repeat center;
     }
 
     .banner .el-carousel__button {

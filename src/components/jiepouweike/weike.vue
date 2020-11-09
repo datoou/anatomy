@@ -2,14 +2,14 @@
   <div class="jiepouweike">
     <div class="top">
       <img class="reveal-top"
-           src="../jiepouweike/img/zhuanjiaweike.png"
+           src="http://res.vesal.site/newWebsiteImg/zhuanjiaweike.png"
            style="width: 20vw;height: auto">
     </div>
 
     <div class="content">
       <div class="weikePic"
            style="width: 100% !important;padding: 0!important">
-        <img src="../jiepouweike/img/laoshi.png"
+        <img src="http://res.vesal.site/newWebsiteImg/laoshi.png"
              style="width: 100%;" />
       </div>
       <div class="weikeTxt"

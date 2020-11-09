@@ -1,6 +1,6 @@
 <template>
     <div class="partnerBody">
-        <img src="../components/vesalservice/img/beijing.png" style="width: 100%;height: auto">
+        <img src="http://res.vesal.site/newWebsiteImg/beijing.png" style="width: 100%;height: auto">
         <div class="fromCard">
             <el-card class="box-card">
                 <div style="width: 100%;text-align: center;margin-bottom: 1vw;font-size: 1.4vw">我要申请成为合作伙伴</div>
@@ -41,7 +41,7 @@
         methods:{
             addPartner () {
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/webAddRecruiting',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/webAddRecruiting',
                     method: 'post',
                     data:this.fromdata
                 }).then(({data}) => {

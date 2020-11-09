@@ -1,7 +1,7 @@
 <template>
     <div class="jiepoudynamic">
         <div class="top">
-            <img class="reveal-top" src="../components/jiepoudynamic/img/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
+            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
         </div>
         <div class="dynamicContent">
             <el-row>
@@ -69,7 +69,7 @@
             },
             getDataList(){
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webdynamic/getDynamicList',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webdynamic/getDynamicList',
                     method: 'post',
                     data:{
                         'page': this.pagenum,
@@ -146,7 +146,7 @@
         padding: 7px !important;
     }
     .dynamicContent .el-card__body:hover{
-        background-image: url("../components/jiepoudynamic/img/zixunxuanzhong.png");
+        background-image: url("http://res.vesal.site/newWebsiteImg/zixunxuanzhong.png");
         background-size: 30.64vw 13.77vw;
         cursor: pointer;
         border-radius: 0;

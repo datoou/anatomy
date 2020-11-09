@@ -1,38 +1,43 @@
 <template>
     <div class="vesalService">
         <div class="top">
-            <img class="reveal-top"  src="../vesalservice/img/guanyuwomen.png" style="width: 20vw;height: auto">
-            <a class="reveal-top" href="/home/vesalService" style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
+            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/guanyuwomen.png"
+                 style="width: 20vw;height: auto">
+            <a class="reveal-top" href="/home/vesalService"
+               style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
         </div>
 
-        <div class="serviceContent" >
+        <div class="serviceContent">
             <div class="dingzhi">
-                <img src="../vesalservice/img/qiyefuwu.png"
+                <img src="http://res.vesal.site/newWebsiteImg/qiyefuwu.png"
                      class="reveal-top"
                      style="width: 8.5vw;height: 2.6vw">
                 <div class="dingzhiContent">
                     <div class="left">
                         <img class="reveal-top"
-                                src="../vesalservice/img/jirou.png" style="width: 14.6875vw;height: 21.77vw">
+                             src="http://res.vesal.site/newWebsiteImg/jirou.png"
+                             style="width: 14.6875vw;height: 21.77vw">
                         <div style="width: 282px;height: 78px;justify-content:space-between;display: flex;flex-direction: column;align-items: center;margin-top: 9.6875vw">
                             <img class="reveal-top"
-                                    src="../vesalservice/img/duochangjing1.png" style="width: 14.6875vw">
+                                 src="http://res.vesal.site/newWebsiteImg/duochangjing1.png" style="width: 14.6875vw">
                             <div class="reveal-top"
-                                    style="width: 165px;height:40px;font-size: 1vw;text-align: left;margin-top: 16px">
+                                 style="width: 165px;height:40px;font-size: 1vw;text-align: left;margin-top: 16px">
                                 自主学习，手术讨论，大屏授课，AR教学
                             </div>
                         </div>
                     </div>
                     <div class="right">
                         <div style="width:12.87vw">
-                            <img class="reveal-top"  src="../vesalservice/img/zhuanyepinzhi1.png" >
-                            <div class="reveal-top"  style="width: 11.875vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
+                            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/zhuanyepinzhi1.png">
+                            <div class="reveal-top"
+                                 style="width: 11.875vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
                                 10000+精准模型，讲解视频、
                                 动画演示以及课程讲解
                                 专业品质 内容详实
                             </div>
                         </div>
-                        <img class="reveal-top"  src="../vesalservice/img/duochangjing2.png" style="margin-top: 8.3vw;width: 34vw;">
+                        <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/duochangjing2.png"
+                             style="margin-top: 8.3vw;width: 34vw;">
                     </div>
                 </div>
             </div>
@@ -44,10 +49,10 @@
                                 placement="left-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/B.png" style="width: 10.416vw">
+                            <img src="http://res.vesal.site/newWebsiteImg/B.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
-                                <img  class="reveal-serviceLeft" data-wow-duration="2s" data-wow-delay="0.5s"
-                                      src="../vesalservice/img/dingzhikaifa.png" style="width: 13.072vw">
+                                <img class="reveal-serviceLeft" data-wow-duration="2s" data-wow-delay="0.5s"
+                                     src="http://res.vesal.site/newWebsiteImg/dingzhikaifa.png" style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                         <el-popover
@@ -55,10 +60,11 @@
                                 placement="right-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/C.png" style="width: 10.416vw">
+                            <img src="http://res.vesal.site/newWebsiteImg/C.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
                                 <img class="reveal-serviceRight" data-wow-duration="2s" data-wow-delay="0.5s"
-                                        src="../vesalservice/img/chubanchengji.png" style="width: 13.072vw">
+                                     src="http://res.vesal.site/newWebsiteImg/chubanchengji.png"
+                                     style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                     </div>
@@ -68,10 +74,11 @@
                                 placement="left-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/A.png" style="width: 10.416vw">
+                            <img src="http://res.vesal.site/newWebsiteImg/A.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
-                                <img class="reveal-serviceLeft" data-wow-duration="2s"  data-wow-offset="250"
-                                        src="../vesalservice/img/neirongshouquan.png" style="width: 13.072vw">
+                                <img class="reveal-serviceLeft" data-wow-duration="2s" data-wow-offset="250"
+                                     src="http://res.vesal.site/newWebsiteImg/neirongshouquan.png"
+                                     style="width: 13.072vw">
                             </el-button>
                         </el-popover>
                         <el-popover
@@ -79,26 +86,27 @@
                                 placement="right-start"
                                 width="200"
                                 trigger="hover">
-                            <img src="../vesalservice/img/D.png" style="width: 10.416vw">
+                            <img src="http://res.vesal.site/newWebsiteImg/D.png" style="width: 10.416vw">
                             <el-button slot="reference" style="background: none;border:none;padding: 0;">
-                                <img class="reveal-serviceRight" data-wow-duration="2s"  data-wow-offset="250"
-                                        src="../vesalservice/img/jiaoxuefuzhu.png" style="width: 13.072vw">
+                                <img class="reveal-serviceRight" data-wow-duration="2s" data-wow-offset="250"
+                                     src="http://res.vesal.site/newWebsiteImg/jiaoxuefuzhu.png" style="width: 13.072vw">
                             </el-button>
 
                         </el-popover>
                     </div>
                 </div>
                 <div style="width: 100%;display: flex;margin-top: 86px">
-                    <img src="../vesalservice/img/hezuohuoban.png" style="width: 8.5vw;height: 2.6vw"/>
+                    <img src="http://res.vesal.site/newWebsiteImg/hezuohuoban.png" style="width: 8.5vw;height: 2.6vw"/>
                 </div>
                 <div class="Partners">
-                    <div class="top" >
-                        <img class="reveal-top"  v-for="item in partnersData" :src="item" style="width: 11.25vw;">
+                    <div class="top">
+                        <img class="reveal-top" v-for="item in partnersData" :src="item" style="width: 11.25vw;">
                     </div>
                     <div class="bottom">
                         <div style="height:91px;display: flex;align-items:flex-end;justify-content: flex-end">
                             <div style="height: 39px;width:100%;background: #DFEFF9;margin:0 -10px 9px 0"></div>
-                            <a href="/home/partner"><img src="../vesalservice/img/qiyehezuo.png" style="width: 15.46875vw;"></a>
+                            <a href="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png"
+                                                         style="width: 15.46875vw;"></a>
                         </div>
                     </div>
                 </div>
@@ -112,7 +120,7 @@
     import scrollReveal from 'scrollreveal';
 
     export default {
-        mounted(){
+        mounted() {
             //第一种写法，可以设置wow中属性
             this.$nextTick(() => { // 在dom渲染完后,再执行动画
                 this.scrollReveal.reveal('.reveal-serviceLeft', {
@@ -151,47 +159,53 @@
                     easing: 'linear',
                     scale: 1,
                 });
-            })},
-        data(){
-            return{
+            })
+        },
+        data() {
+            return {
                 scrollReveal: scrollReveal(),
-                partnersData:[
-                    require('../vesalservice/img/guangzhouyikedaxue.png'),
-                    require('../vesalservice/img/longjikang.png'),
-                    require('../vesalservice/img/zhengdajiepou.png'),
-                    require('../vesalservice/img/zhongdeiguke.png'),
-                    require('../vesalservice/img/sujingfeng.png'),
+                partnersData: [
+                    'http://res.vesal.site/newWebsiteImg/guangzhouyikedaxue.png',
+                    'http://res.vesal.site/newWebsiteImg/longjikang.png',
+                    'http://res.vesal.site/newWebsiteImg/zhengdajiepou.png',
+                    'http://res.vesal.site/newWebsiteImg/zhongdeiguke.png',
+                    'http://res.vesal.site/newWebsiteImg/sujingfeng.png',
                 ]
             }
         },
     }
 </script>
 <style scoped lang="less">
-    .vesalService{
+    .vesalService {
         padding: 0 18.75vw;
-        .top{
+
+        .top {
             margin: 4vw 0 33px 0;
             display: flex;
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
         }
-        .serviceContent{
-            .dingzhi{
+
+        .serviceContent {
+            .dingzhi {
                 display: flex;
                 flex-direction: column;
                 height: 50vw;
-                .dingzhiContent{
+
+                .dingzhiContent {
                     display: flex;
-                    .left{
-                        margin:3.64vw 0 0 5.5vw;
+
+                    .left {
+                        margin: 3.64vw 0 0 5.5vw;
                         width: 14.68vw;
                         height: 25.05vw;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                     }
-                    .right{
+
+                    .right {
                         margin-top: 9.27vw;
                         display: flex;
                         flex-direction: column;
@@ -201,18 +215,21 @@
                     }
                 }
             }
-            .dingzhiInfo{
+
+            .dingzhiInfo {
                 margin-top: 68px;
-                .Cooperation{
+
+                .Cooperation {
                     height: 24vw;
-                    background:url("../vesalservice/img/duoyanghua1.png") no-repeat ;
+                    background: url("../vesalservice/img/duoyanghua1.png") no-repeat;
                     background-size: 100%;
                     background-position-y: bottom;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
-                    .top{
+
+                    .top {
                         width: 28.75vw;
                         height: 13.02vw;
                         /*background: skyblue;*/
@@ -220,7 +237,8 @@
                         display: flex;
                         justify-content: space-between;
                     }
-                    .bottom{
+
+                    .bottom {
                         width: 47.552vw;
                         height: 13.02vw;
                         /*background: green;*/
@@ -229,19 +247,22 @@
                         justify-content: space-between;
                     }
                 }
-                .Partners{
+
+                .Partners {
                     width: 100%;
                     /*margin-top: -55px;*/
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    .top{
+
+                    .top {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
                         justify-content: space-between;
                     }
-                    .bottom{
+
+                    .bottom {
 
                     }
                 }
@@ -252,15 +273,16 @@
 </style>
 <style>
 
-    .dynamicContent .el-divider--horizontal{
+    .dynamicContent .el-divider--horizontal {
         margin: 0 0 24px 0;
     }
-    .popperStyle{
+
+    .popperStyle {
         padding: 0 !important;
         border: 0 !important;
         background: none !important;
         box-shadow: none !important;
-        z-index: 20!important;
+        z-index: 20 !important;
     }
 
 </style>

@@ -15,7 +15,7 @@
           <el-menu-item style="">
             <template slot="title">
               <img @click="logo"
-                   :src="require('../assets/img/logo.png')"
+                   src="http://res.vesal.site/newWebsiteImg/logo.png"
                    style="width: 9.73vw;height: 3.07vw;">
             </template>
           </el-menu-item>
@@ -40,7 +40,7 @@
     <el-row>
       <div class="Footer">
         <div class="footer">
-          <img src="../assets/img/vesallongo.png"
+          <img src="http://res.vesal.site/newWebsiteImg/vesallongo.png"
                style="width: 8.5vw" />
           <div class="info">
             <div style="font-size: 0.9375vw;margin-bottom: 1vw;color: black">联系我们</div>
@@ -53,7 +53,7 @@
             </div>
 
           </div>
-          <img src="../assets/img/gongzhonghaos.png"
+          <img src="http://res.vesal.site/newWebsiteImg/gongzhonghaos.png"
                style="width: 8.18vw;" />
         </div>
       </div>

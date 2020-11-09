@@ -1,7 +1,7 @@
 <template>
     <div class="jiepoudynamic">
         <div class="top">
-            <img class="reveal-top"  src="../jiepoudynamic/img/jiepoudongtai.png" style="width: 20vw;height: auto">
+            <img class="reveal-top"  src="http://res.vesal.site/newWebsiteImg/jiepoudongtai.png" style="width: 20vw;height: auto">
             <a class="reveal-top" href="/home/dynamicMore" style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
         </div>
 
@@ -64,7 +64,7 @@
             },
             getDataList(){
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webdynamic/getDynamicList',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webdynamic/getDynamicList',
                     method: 'post',
                     data:{
                         'page': this.pagenum,

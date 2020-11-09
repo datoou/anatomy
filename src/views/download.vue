@@ -15,16 +15,16 @@
             <div style="display: flex;">
                 <a href="http://res.vesal.site/pc/anatomyMaster/解剖大师1.1.0.zip">
                     <div class="pcDownload">
-                        <img src="../assets/img/win.png" style="width: 90px;height: 90px">
+                        <img src="http://res.vesal.site/pc/anatomyMaster/win.png" style="width: 90px;height: 90px">
                         <div style="font-size:20px;color: #707070">windows版下载</div>
-                        <img src="../assets/img/download.png">
+                        <img src="http://res.vesal.site/newWebsiteImg/download.png">
                     </div>
                 </a>
                 <a href="http://res.vesal.site/pc/anatomyMaster/v120/AnatomyMasterForMac.dmg">
                     <div class="pcDownload">
-                        <img src="../assets/img/mac1.png" style="width: 90px;height: 90px">
+                        <img src="http://res.vesal.site/pc/anatomyMaster/mac1.png" style="width: 90px;height: 90px">
                         <div style="font-size:20px;color: #707070">Mac版下载</div>
-                        <img src="../assets/img/download.png">
+                        <img src="http://res.vesal.site/newWebsiteImg/download.png">
                     </div>
                 </a>
             </div>
@@ -34,16 +34,16 @@
             <div style="display: flex;">
                 <a href="http://fileprod.vesal.site/vesal_install1001.zip">
                     <div class="moreDownload">
-                        <img src="../assets/img/ppt.png" style="width: 90px;height: 90px">
+                        <img src="http://res.vesal.site/newWebsiteImg/ppt.png" style="width: 90px;height: 90px">
                         <div style="font-size:20px;color: #707070">维萨里解剖3D PPT插件</div>
-                        <img src="../assets/img/download.png">
+                        <img src="http://res.vesal.site/newWebsiteImg/download.png">
                     </div>
                 </a>
                 <a href="http://118.89.52.31/iosShop4.0/test/VIP_MODEL.zip">
                     <div class="moreDownload">
-                        <img src="../assets/img/ppt.png" style="width: 90px;height: 90px">
+                        <img src="http://res.vesal.site/newWebsiteImg/ppt.png" style="width: 90px;height: 90px">
                         <div style="font-size:20px;color: #707070">PPT模型 安装包</div>
-                        <img src="../assets/img/download.png">
+                        <img src="http://res.vesal.site/newWebsiteImg/download.png">
                     </div>
                 </a>
             </div>
@@ -57,27 +57,27 @@
             return{
                 ewmDownload:[
                     {
-                        ewm:require('../assets/img/apkdownload.png'),
+                        ewm:'http://fileprod.vesal.site//ercode/apkdownload.png',
                         title:'维萨里3D解剖',
                         path:'http://fileprod.vesal.site/app-release_background.apk'
                     },
                     {
-                        ewm:require('../assets/img/jpds.png'),
+                        ewm:'http://res.vesal.site/icon/download/jpds.png',
                         title:'解剖大师',
                         path:'http://fileprod.vesal.site/app-release_background.apk'
                     },
                     {
-                        ewm:require('../assets/img/gkzj.png'),
+                        ewm:'http://res.vesal.site/icon/download/gkzj.png',
                         title:'骨科专家',
                         path:'http://fileprod.vesal.site/app-release_background.apk'
                     },
                     {
-                        ewm:require('../assets/img/ydkf.png'),
+                        ewm:'http://res.vesal.site/icon/download/ydkf.png',
                         title:'运动康复训练',
                         path:'http://fileprod.vesal.site/app-release_background.apk'
                     },
                     {
-                        ewm:require('../assets/img/wsljs.png'),
+                        ewm:'http://res.vesal.site/icon/download/wsljs.png',
                         title:'维萨里健身',
                         path:'http://fileprod.vesal.site/app-release_background.apk'
                     },
