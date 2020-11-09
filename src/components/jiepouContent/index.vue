@@ -304,7 +304,7 @@
         margin-right: auto;
         margin-left: auto;
         height: 40px;
-        background: url('http://res.vesal.site/newWebsiteImg/banner name.png') no-repeat center;
+        background: url('http://res.vesal.site/newWebsiteImg/bannerName.png') no-repeat center;
     }
 
     .banner .el-carousel__button {

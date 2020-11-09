@@ -37,7 +37,6 @@
       <router-view/>
     </el-row>
 
-    <el-row>
       <div class="Footer">
         <div class="footer">
           <img src="http://res.vesal.site/newWebsiteImg/vesallongo.png"
@@ -57,7 +56,9 @@
                style="width: 8.18vw;" />
         </div>
       </div>
-    </el-row>
+
+
+
     <!--回到顶部、客服-->
     <el-backtop :bottom="130">
       <div style="{
