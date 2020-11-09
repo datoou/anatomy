@@ -18,19 +18,19 @@
           <div style="font-size: 1vw;font-weight: bold">
             <span style="color: #1292E4;font-size: 2vw;">500+ </span>节</div>
           <div style="font-size: 1.5vw;font-weight: bold;margin-top: 1vw">解剖相关微课</div>
-          <div style="font-size: 1vw;margin-top: 10px">深入浅出，形象生动</div>
+          <div style="font-size: 1vw;margin-top: 10px;font-weight: bold;color: #0F2C3F;opacity: 0.7">深入浅出，形象生动</div>
         </div>
         <div style="margin: 20px auto;">
           <div style="font-size: 1vw;font-weight: bold">
             <span style="color: #1292E4;font-size: 2vw">10w+ </span>人</div>
           <div style="font-size: 1.5vw;font-weight: bold;margin-top: 1vw">学习人数</div>
-          <div style="font-size: 1vw;margin-top: 10px">最专业的解剖学习社区</div>
+          <div style="font-size: 1vw;margin-top: 10px;font-weight: bold;color: #0F2C3F;opacity: 0.7">最专业的解剖学习社区</div>
         </div>
         <div style="margin: 20px auto;">
           <div style="font-size: 1vw;font-weight: bold">
             <span style="color: #1292E4;font-size: 2vw">6 </span>个</div>
           <div style="font-size: 1.5vw;font-weight: bold;margin-top: 1vw">学习方向</div>
-          <div style="font-size: 1vw;margin-top: 10px">解剖 治疗手法 中医全方位</div>
+          <div style="font-size: 1vw;margin-top: 10px;font-weight: bold;color: #0F2C3F;opacity: 0.7">解剖 治疗手法 中医全方位</div>
         </div>
       </div>
       <div class="appDownloud">
@@ -98,7 +98,7 @@ export default {
   margin-top: 20px;
   .top {
     padding: 0 18.75vw;
-    margin: 4vw 0 33px 0;
+    margin: 4vw 0 1.8vw 0;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
