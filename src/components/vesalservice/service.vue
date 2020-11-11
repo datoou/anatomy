@@ -11,7 +11,7 @@
             <div class="dingzhi">
                 <img src="http://res.vesal.site/newWebsiteImg/qiyefuwu.png"
                      class="reveal-top"
-                     style="width: 8.5vw;height: 2.6vw">
+                     style="width: 8.5vw;height: auto">
                 <div class="dingzhiContent">
                     <div class="left">
                         <img class="reveal-top"
@@ -21,8 +21,9 @@
                             <img class="reveal-top"
                                  src="http://res.vesal.site/newWebsiteImg/duochangjing1.png" style="width: 14.6875vw">
                             <div class="reveal-top"
-                                 style="width: 165px;height:40px;font-size: 1vw;text-align: left;margin-top: 16px">
-                                自主学习，手术讨论，大屏授课，AR教学
+                                 style="width: 13vw;height:40px;font-size: 1.1vw;text-align: left;margin-top: 16px">
+                                <p>自主学习，手术讨论，</p>
+                                <p>大屏授课，AR教学</p>
                             </div>
                         </div>
                     </div>
@@ -30,10 +31,10 @@
                         <div style="width:12.87vw">
                             <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/zhuanyepinzhi1.png">
                             <div class="reveal-top"
-                                 style="width: 11.875vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
-                                10000+精准模型，讲解视频、
-                                动画演示以及课程讲解
-                                专业品质 内容详实
+                                 style="width: 14vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
+                                <p>10000+精准模型，讲解视频、</p>
+                                <p>动画演示以及课程讲解</p>
+                                <p>专业品质 内容详实</p>
                             </div>
                         </div>
                         <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/duochangjing2.png"

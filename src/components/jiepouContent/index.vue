@@ -3,7 +3,6 @@
         <!--轮播-->
         <div class="banner">
             <el-carousel trigger="click"
-                         :autoplay="false"
                          v-bind:style="{width: windowWidth,height: windowHeight}">
                 <el-carousel-item class="label"
                                   v-for="item in bannerData"
@@ -51,6 +50,7 @@
                         <div class="appInfo">
                             <div class="appInfoTop">
                                 <div class="title">{{appitem.app_name}}</div>
+<!--                                <div style="background-color: #2d9afa;height: 3px;width: 10vw;"></div>-->
                                 <div class="content">{{appitem.app_content}}</div>
                             </div>
 
@@ -59,14 +59,15 @@
                                     <el-tabs
                                              tab-position="left"
                                              type="card">
-                                        <el-tab-pane v-for="item in bannerAppContentData">
+                                        <el-tab-pane v-for="(item,index) in bannerAppContentData" >
+
                                             <div slot="label"
-                                                 style="display: flex;flex-direction: column;height: auto;justify-content: space-around;">
+                                                 style="display: flex;flex-direction: column;height: auto !important;margin-top: 0.8vw">
                                                 <div class="list">
-                                                    <span class="list1">{{item.content_id}}</span>
-                                                    <span style="font-size: 1.25vw;letter-spacing: 2px">{{item.big_title}}</span>
+                                                    <span class="list1">{{index+1}}</span>
+                                                    <span style="font-size: 1.15vw;letter-spacing: 2px;">{{item.big_title}}</span>
                                                 </div>
-                                                <div style="font-size: 1vm;text-align: left;letter-spacing: 2px;cursor: default;width: 13vw;height: auto;white-space:normal; line-height: 1.5em;">
+                                                <div style="margin: 0.5vw  auto;text-align: left;letter-spacing: 2px;cursor: default;width: 13vw;height: auto;white-space:normal; line-height: 1.5em;font-size: 0.8vw;">
                                                    {{item.small_title}}
                                                 </div>
                                             </div>
@@ -209,27 +210,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
 
         .appInfoTop {
-            height: 4vw;
+            height:auto;
             display: flex;
-            width: 23vw;
+            width: auto;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            margin-top: 22px;
+            /*margin-top: 22px;*/
 
             .title {
-                height: 30px;
-                font-size: 30px;
+                height: 1.52vw;
+                font-size: 1.5vw;
                 color: #000000;
+                margin-top: 0.8vw;
+                border-bottom: 4px solid #1292E4;
+
+
             }
 
             .content {
-                font-size: 14px;
-                width: 442px;
-                height: 14px;
+                font-size: 0.9vw;
+                /*height: 14px;*/
+                margin-top: 0.5vw;
+                /*margin-bottom: 1.5vw;*/
                 color: #707070;
             }
         }
@@ -237,33 +243,35 @@
         .appInfoBottom {
             width: 50vw;
             height: 30vw;
-            margin-bottom: 17px;
+            /*margin-bottom: 17px;*/
             display: flex;
             align-items: flex-end;
 
             .appInfoBottomList {
                 display: flex;
                 flex-direction: column;
-                margin: 5vw 0 0 0;
-
+                margin: 0 0 0 0;
                 .list {
                     width: 16vw;
-                    height: 2.2vw;
+                    /*height: 2.2vw;*/
                     background: #1292e4;
                     color: #ffffff;
                     border-radius: 10px;
                     display: flex;
                     align-items: center;
                     .list1 {
-                        text-align: center;
-                        font-size: 1vw;
-                        width: 1.2vw;
-                        height: 1.2vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 0.7vw;
+                        width: 1vw;
+                        height: 1vw;
                         color: #000000;
                         background: #ffffff;
-                        border-radius: 9px;
+                        border-radius: 50%;
                         margin: 0 10px;
                         line-height: 18px;
+
                     }
                 }
             }
@@ -296,6 +304,10 @@
         /*border: 1px dashed #fff;*/
         border-right: 0;
         border-left: 0;
+    }
+
+    .banner .el-carousel__indicator.is-active button {
+        font-size: 14px;
     }
 
     .banner .el-carousel__indicators--labels {
@@ -379,8 +391,9 @@
     }
 
     .appInfoBottomList .el-tabs--card > .el-tabs__header .el-tabs__item {
-        margin: 15px;
-        height: 70px;
+        /*margin: 0.1vw 15px;*/
+        /*margin-top: 1vw;*/
+        height: auto;
         border: none !important;
     }
 
@@ -398,7 +411,7 @@
     > .el-tabs__header
     .el-tabs__item.is-active
     .list {
-        background: #000000;
+        background: #0F2C3F;
     }
 
     .appInfoBottomList .el-tabs__item.is-active {

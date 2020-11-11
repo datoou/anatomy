@@ -12,7 +12,7 @@
                             :body-style="{ padding: '0px',marginBottom:'30px',display:'flex',flexDirection:'column', }">
                         <a :href="cardItem.web_url" class="list">
                             <img :src="cardItem.pic_url" style="width: 29.8vw;height: 13.02vw;cursor: pointer;transition: all 0.8s;">
-                            <div style="position:absolute;">
+                            <div style="position:absolute;left: 0;bottom: 0">
                                 <div style="height: 50px;width:30.1vw;background-color:rgba(0,0,0,0.4);display: flex;align-items: center;width: 29.8vw">
                                     <p style="color: #fff;margin-left: 1vw">{{cardItem.title}}</p>
                                 </div>
@@ -100,10 +100,10 @@
         }
         .dynamicContent{
             .list{
-                height:13vw;
+                /*height:13vw;*/
                 display: flex;
-                align-items:flex-end;
                 width: 29.8vw;
+                position: relative;
                 height: 13.02vw;
                 /*margin-left: 2%;*/
                 /*margin-right: 2%;*/

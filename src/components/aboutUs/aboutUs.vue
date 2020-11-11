@@ -19,9 +19,9 @@
         <div class="aboutUsMid">
             <div class="aboutUsMid1">
                 <span class="title">促进数字解剖在中国的普遍应用</span>
-                <div style="width: 100%;display: flex;background-color: #2d9afa;height: 2.6041vw;margin-top: 2.6041vw">
-                    <div style="width: 35%;font-size: 1vw;font-weight: normal;color:#ffffff ;border-right-style:solid;border-color: #ffffff;border-width:1px;margin: auto 0;">提出问题</div>
-                    <div style="width: 65%;font-size: 1vw;font-weight: normal;color:#ffffff;margin: auto 0;">解决方案</div>
+                <div style="width: 100%;display: flex;background-color: #2d9afa;height: 2.6041vw;margin-top: 2.6041vw;align-items: center">
+                    <div style="width: 35%;font-size: 1vw;font-weight: normal;color:#ffffff ;border-right-style:solid;border-color: #ffffff;border-width:1px;">提出问题</div>
+                    <div style="width: 65%;font-size: 1vw;font-weight: normal;color:#ffffff;">解决方案</div>
                 </div>
                 <el-tabs class="aboutUsTabs" tab-position="left" style="height: 25.52vw;">
                     <el-tab-pane label="【学习方向】学生上课很难快速理解所学的大量内容">
@@ -135,7 +135,10 @@
 
 <style lang="less" scoped>
 .aboutUs{
-    margin: 59px 20vw;
+    /*margin: 59px 20vw;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3vw;
     display: flex;
     flex-direction: column;
     /*background: pink;*/
@@ -149,7 +152,9 @@
             font-weight:bold;
             color: #333;
             text-align: center;
-            margin: 15px auto;
+            /*margin: 15px auto;*/
+            justify-content: center;
+
         }
         .aboutUsTop2{
             height: 36.45vw;

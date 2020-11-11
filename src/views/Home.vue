@@ -276,6 +276,7 @@ export default {
 .el-menu--horizontal > .el-menu-item,
 .el-submenu {
   height: 60px !important;
+  font-weight: bold !important;
   line-height: 60px;
   border-bottom: 0 !important;
   color: #fff;
@@ -285,10 +286,11 @@ export default {
 .el-menu--horizontal > .el-menu-item:hover,
 .el-submenu:hover {
   color: #1292e4 !important;
+  font-weight: bold !important;
 }
 
 .el-menu-item.is-active {
-  font-weight: bold;
+  font-weight: bold  !important;
   border-bottom: 0;
 }
 
