@@ -3,7 +3,7 @@
         <!--轮播-->
         <div class="banner">
             <el-carousel trigger="click"
-                         v-bind:style="{width: windowWidth,height: windowHeight}">
+                         v-bind:style="{width: '100%',height: windowHeight}">
                 <el-carousel-item class="label"
                                   v-for="item in bannerData"
                                   :key="item.title"
