@@ -16,8 +16,8 @@
                     <div class="left">
                         <img class="reveal-top"
                              src="http://res.vesal.site/newWebsiteImg/jirou.png"
-                             style="width: 14.6875vw;height: 21.77vw">
-                        <div style="width: 282px;height: 78px;justify-content:space-between;display: flex;flex-direction: column;align-items: center;margin-top: 9.6875vw">
+                             style="width: 14.6875vw;height: auto">
+                        <div style="width: auto;height: auto;justify-content:space-between;display: flex;flex-direction: column;align-items: center;margin-top: 9.6875vw">
                             <img class="reveal-top"
                                  src="http://res.vesal.site/newWebsiteImg/duochangjing1.png" style="width: 14.6875vw">
                             <div class="reveal-top"
@@ -211,8 +211,8 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        width: 669px;
-                        height: 682px;
+                        width: 36vw;
+                        height: 35.52vw;
                     }
                 }
             }
@@ -243,7 +243,6 @@
                         width: 47.552vw;
                         height: 13.02vw;
                         /*background: green;*/
-                        margin: 0;
                         display: flex;
                         justify-content: space-between;
                     }
@@ -255,7 +254,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-
+                    margin-bottom: 3vw;
                     .top {
                         display: flex;
                         flex-direction: row;
@@ -263,9 +262,6 @@
                         justify-content: space-between;
                     }
 
-                    .bottom {
-
-                    }
                 }
             }
         }

@@ -20,7 +20,7 @@
             </template>
           </el-menu-item>
 
-          <el-menu-item style="font-size:0.9vw;font-weight: 400;"
+          <el-menu-item style="font-size:0.9vw;"
                         :index="index + ''"
                         v-for="(item,index) in menuData"
                         :key="index">
@@ -47,13 +47,13 @@
             <span>电话：029-68579950</span>
             <span>微信客服：15619045028</span>
             <div style="display: flex;flex-direction: row">
-              <span style="margin-right: 2vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 陕ICP备17006533号-1</span>
+              <span style="margin-right: 1vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 陕ICP备17006533号-1</span>
               <span>维萨里官方微信客服</span>
             </div>
 
           </div>
           <img src="http://res.vesal.site/newWebsiteImg/gongzhonghaos.png"
-               style="width: 8.18vw;" />
+               style="width: 8vw;" />
         </div>
       </div>
 
@@ -224,7 +224,7 @@ export default {
   height: 333px;
 
   .footer {
-    margin: 90px 16vw;
+    margin: 90px 18vw;
     height: 7.7vw;
     display: flex;
     align-items: center;
@@ -276,11 +276,10 @@ export default {
 .el-menu--horizontal > .el-menu-item,
 .el-submenu {
   height: 60px !important;
-  font-weight: bold !important;
   line-height: 60px;
   border-bottom: 0 !important;
-  color: #fff;
-  font-size: 14px;
+  font-size: 1.2vw;
+  padding: 0 2.4vw !important;
 }
 
 .el-menu--horizontal > .el-menu-item:hover,

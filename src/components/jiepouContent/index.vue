@@ -30,7 +30,7 @@
                                       :key="appitem.app_id"
                                       :label="appitem.app_id"
                                       :initial-index="active_Name">
-                        <div style="width: 6vw;height: 6vw;overflow:hidden;border-radius: 30px">
+                        <div style="width: 6vw;height: 6vw;overflow:hidden;border-radius: 17.578125%">
                             <img :src="appitem.icon_url"
                                  style="width: 100%;height: 100%;cursor: pointer;transition: all 0.8s;">
                         </div>

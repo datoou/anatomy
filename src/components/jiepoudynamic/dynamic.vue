@@ -26,15 +26,14 @@
                 <!--分割线-->
                 <el-divider class="reveal-top"></el-divider>
                 <!--分页-->
-                <el-pagination
-                        class="reveal-top"
-                        background
-                        layout="prev, pager, next"
-                        :total="total"
-                        :current-page="pagenum"
-                        :page-size='pagesize'
-                        @current-change="handleCurrentChange">
-                </el-pagination>
+            <el-pagination
+                    background
+                    layout="prev, pager, next"
+                    :total="total"
+                    :current-page="pagenum"
+                    :page-size='pagesize'
+                    @current-change="handleCurrentChange">
+            </el-pagination>
             <div class="fenye">
 
             </div>
@@ -101,7 +100,7 @@
                 height: 13.02vw;
                 overflow: hidden;
                 img:hover{
-                    transform: scale(1.2);
+                    transform: scale(1.07);
                 }
                 .listContent{
                     /*width: 16vw;*/

@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="appDownloud">
-        <router-link :to="{path:'/home/download'}" style="font-size: 1.5vw;margin-top: 10px;font-weight: bold;border-bottom: 2px solid #1292E4;text-decoration:none;color: #000203">
+        <router-link class="downloadUrl" :to="{path:'/home/download'}" style="font-size: 1.5vw;margin-top: 10px;font-weight: bold;text-decoration:none;color: #000203">
           下载手机app去学习
         </router-link>
       </div>
@@ -109,8 +109,9 @@ export default {
 <style>
   .router-link-active {
     text-decoration: none;
+
   }
-  a {
-    text-decoraction: none;
+  .downloadUrl:hover{
+    border-bottom: 2px solid #1292E4;
   }
 </style>

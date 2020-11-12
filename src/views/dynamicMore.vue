@@ -1,7 +1,7 @@
 <template>
     <div class="jiepoudynamic">
         <div class="top">
-            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">
+<!--            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/jiepoudongtai.png" style="width: 19.7vw;height: 2.9vw">-->
         </div>
         <div class="dynamicContent">
             <el-row>
@@ -53,7 +53,7 @@
         data(){
             return{
                 pagenum:1,
-                pagesize:6,
+                pagesize:10,
                 total:40,
                 dynamicData:[]
             }
@@ -109,7 +109,7 @@
                 /*margin-right: 2%;*/
                 overflow: hidden;
                 img:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.07);
                 }
                 .listContent{
                     /*width: 16vw;*/

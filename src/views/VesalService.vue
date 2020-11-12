@@ -5,7 +5,7 @@
     </div>
     <div style="">
         <div style="width: 100%;display: flex;justify-content: center;height:auto">
-               <img src="http://res.vesal.site/newWebsiteImg/server1.png" style="width: 750px;height: auto">
+               <img src="http://res.vesal.site/newWebsiteImg/server1.png" style="width: 41vw;height: auto">
         </div>
         <div style="width: 100%;">
 <!--            李哲-->
@@ -227,7 +227,7 @@
     .serviceTabs .el-tabs__active-bar.is-top {
         height: 100% !important;
         z-index: 0 !important;
-        width: 34%;
+        width: 33.5% !important;
         border-radius: 0.4vw;
     }
 </style>
