@@ -3,8 +3,8 @@
         <div class="top">
             <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/guanyuwomen.png"
                  style="width: 20vw;height: auto">
-            <a class="reveal-top" href="/home/vesalService"
-               style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
+            <router-link to="/home/aboutUs"
+                         style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</router-link>
         </div>
 
         <div class="serviceContent">
