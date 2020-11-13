@@ -106,8 +106,8 @@
                     <div class="bottom">
                         <div style="height:91px;display: flex;align-items:flex-end;justify-content: flex-end">
                             <div style="height: 39px;width:100%;background: #DFEFF9;margin:0 -10px 9px 0"></div>
-                            <a href="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png"
-                                                         style="width: 15.46875vw;"></a>
+                            <router-link to="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png"
+                                                                 style="width: 15.46875vw;"></router-link>
                         </div>
                     </div>
                 </div>
