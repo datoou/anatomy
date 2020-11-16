@@ -19,9 +19,9 @@
                              style="width: 14.6875vw;height: auto">
                         <div style="width: auto;height: auto;justify-content:space-between;display: flex;flex-direction: column;align-items: center;margin-top: 9.6875vw">
                             <img class="reveal-top"
-                                 src="http://res.vesal.site/newWebsiteImg/duochangjing1.png" style="width: 14.6875vw">
+                                 src="http://res.vesal.site/newWebsiteImg/duochangjing1.png" style="width: 14vw">
                             <div class="reveal-top"
-                                 style="width: 13vw;height:40px;font-size: 1.1vw;text-align: left;margin-top: 16px">
+                                 style="width: 14vw;height: 4vw;font-size: 1vw;text-align: left;margin-top: 0.4vw;">
                                 <p>自主学习，手术讨论，</p>
                                 <p>大屏授课，AR教学</p>
                             </div>
@@ -29,9 +29,9 @@
                     </div>
                     <div class="right">
                         <div style="width:12.87vw">
-                            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/zhuanyepinzhi1.png">
+                            <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/zhuanyepinzhi1.png" style="width: 15vw">
                             <div class="reveal-top"
-                                 style="width: 14vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 16px">
+                                 style="width: 14vw;height: 3.3vw;font-size: 1vw;text-align: left;margin-top: 0.4vw;">
                                 <p>10000+精准模型，讲解视频、</p>
                                 <p>动画演示以及课程讲解</p>
                                 <p>专业品质 内容详实</p>

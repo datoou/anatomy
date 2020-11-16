@@ -153,6 +153,7 @@
             color: #333;
             text-align: center;
             /*margin: 15px auto;*/
+            align-items: center;
             justify-content: center;
 
         }

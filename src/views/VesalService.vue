@@ -4,8 +4,8 @@
             <img src="http://res.vesal.site/newWebsiteImg/hezuozhaomu.png" v-bind:style="{width: windowWidth,height: windowHeight}">
     </div>
     <div style="">
-        <div style="width: 100%;display: flex;justify-content: center;height:auto">
-               <img src="http://res.vesal.site/newWebsiteImg/server1.png" style="width: 41vw;height: auto">
+        <div style="width: 41vw;display: flex;justify-content: center;height:auto;margin: auto">
+               <img src="http://res.vesal.site/newWebsiteImg/server1.png" style="width: 100%;height: auto">
         </div>
         <div style="width: 100%;">
 <!--            李哲-->
