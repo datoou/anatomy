@@ -69,7 +69,7 @@
                     line-height: 40px;
                     color: #1989fa;
                   }">
-        <img src="../assets/img/top.png">
+        <img src="http://res.vesal.site/newWebsiteImg/top.png" style="width: 70px">
       </div>
     </el-backtop>
 
@@ -83,7 +83,7 @@
                   }">
         <img class="kefuImg"
              v-show="isShow"
-             src="../assets/img/gongzhonghaozhanshi.png">
+             src="http://res.vesal.site/newWebsiteImg/gongzhonghaozhanshi.png" style="width: 191px">
         <el-button @click="kefuClick"
                    @mouseenter.native="kefuShow"
                    @mouseleave.native="kefuHide"
