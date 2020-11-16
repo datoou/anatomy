@@ -48,19 +48,22 @@
             <span>微信客服：15619045028</span>
             <div style="display: flex;flex-direction: row">
               <span style="margin-right: 1vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 <a href="http://www.beian.gov.cn/portal/index.do" style="color: #1292e4">陕ICP备17006533号-1</a></span>
-              <span>维萨里官方微信客服</span>
             </div>
 
           </div>
-          <img src="http://res.vesal.site/newWebsiteImg/gongzhonghaos.png"
-               style="width: 8vw;" />
+          <div>
+            <span class="bottomWXkefu">维萨里官方微信客服</span>
+            <img src="http://res.vesal.site/newWebsiteImg/gongzhonghaos.png"
+                 style="width: 8vw;" />
+          </div>
+
         </div>
       </div>
 
 
 
     <!--回到顶部、客服-->
-    <el-backtop :bottom="130">
+    <el-backtop class="backtop" :bottom="130">
       <div style="{
                     text-align: center;
                     line-height: 40px;
@@ -86,7 +89,7 @@
                    @mouseleave.native="kefuHide"
                    slot="reference"
                    style="background: none;border:none;padding: 0;">
-          <img src="../assets/img/gongzhonghao.png">
+          <img :src="backTopWXsrc" style="width: 70px">
         </el-button>
       </div>
     </el-backtop>
@@ -129,6 +132,7 @@ export default {
     return {
       isShow: false,
       scrollReveal: scrollReveal(),
+      backTopWXsrc:'http://res.vesal.site/newWebsiteImg/gongzhonghaoGrey.png',
       scrollTop: 0,
       timer: null,
       scrollBottom: 0,
@@ -185,12 +189,15 @@ export default {
     },
     kefuShow () {
       this.isShow = true;
+      this.backTopWXsrc='http://res.vesal.site/newWebsiteImg/gongzhonghao.png';
     },
     kefuHide () {
       this.isShow = false;
+      this.backTopWXsrc='http://res.vesal.site/newWebsiteImg/gongzhonghaoGrey.png';
     },
     kefuClick () {
       this.isShow = false;
+      this.backTopWXsrc='http://res.vesal.site/newWebsiteImg/gongzhonghaoGrey.png';
     }
   }
 };
@@ -257,6 +264,25 @@ export default {
   color: #333;
   justify-content: center;
 }
+.backtop{
+  background-color: rgba(255,255,255,0);
+}
+.backtop:hover{
+  background-color: rgba(255,255,255,0);
+}
+.backtop:focus{
+  background-color: rgba(255,255,255,0);
+}
+
+.kefu{
+  background-color: rgba(255,255,255,0);
+}
+.kefu:hover{
+  background-color: rgba(255,255,255,0);
+}
+.kefu:focus{
+  background-color: rgba(255,255,255,0);
+}
 
 .tabs {
   width: 100%;
@@ -305,5 +331,9 @@ export default {
 .el-menu--horizontal > .el-menu-item a,
 .el-menu--horizontal > .el-menu-item a:hover {
   text-decoration: none;
+}
+.bottomWXkefu{
+  font-size: 0.78125vw;
+  color: #707070;
 }
 </style>

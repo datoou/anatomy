@@ -25,7 +25,7 @@
                     </el-form-item>
                 </el-form>
             </el-card>
-            <el-button style="width: 31.25vw; margin-top: 4vw" type="primary" @click="addPartner">申请成为合伙人</el-button>
+            <el-button style="width: 31.25vw; margin-top: 2.5vw;border-radius:10px !important;" type="primary" @click="addPartner">申请成为合伙人</el-button>
         </div>
     </div>
 </template>
@@ -68,6 +68,9 @@
         top: 10%;
         left: 50%;
         margin-left: -15.625vw;
+    }
+    .box-card{
+        border-radius: 4.545% !important;
     }
 
 </style>

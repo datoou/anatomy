@@ -340,9 +340,19 @@
     }
 
     .appSwitch .el-carousel__arrow {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         margin-top: 1vw;
+
+    }
+
+    .appSwitch .el-carousel__arrow .el-icon-arrow-left{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .appSwitch .el-carousel__arrow .el-icon-arrow-right{
+        font-size: 20px;
+        font-weight: 800;
     }
 
     .appSwitch .el-carousel {

@@ -5,7 +5,7 @@
             <div style="color: #707070;margin-left: 80px">请到手机应用商店（小米应用商店、vivo应用市场、OPPO商店、华为应用市场、应用宝等均可下载），搜索我们的应用名称即可下载</div>
             <div class="ewmDownload" >
                 <div class="listItem" v-for="(item,index) in ewmDownload" :key="index">
-                    <a :href="item.path"><img :src="item.ewm" style="width: 120px;height: 120px"></a>
+                    <img :src="item.ewm" style="width: 120px;height: 120px">
                     <span style="margin:10px 0;color: #8a8a8a">{{item.title}}</span>
                 </div>
             </div>
