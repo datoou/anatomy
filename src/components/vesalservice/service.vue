@@ -3,8 +3,8 @@
         <div class="top">
             <img class="reveal-top" src="http://res.vesal.site/newWebsiteImg/guanyuwomen.png"
                  style="width: 20vw;height: auto">
-            <a class="reveal-top" href="/home/vesalService"
-               style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
+            <router-link to="/home/aboutUs"
+                         style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</router-link>
         </div>
 
         <div class="serviceContent">
@@ -106,8 +106,8 @@
                     <div class="bottom">
                         <div style="height:91px;display: flex;align-items:flex-end;justify-content: flex-end">
                             <div style="height: 39px;width:100%;background: #DFEFF9;margin:0 -10px 9px 0"></div>
-                            <a href="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png"
-                                                         style="width: 15.46875vw;"></a>
+                            <router-link to="/home/partner"><img src="http://res.vesal.site/newWebsiteImg/qiyehezuo.png"
+                                                                 style="width: 15.46875vw;"></router-link>
                         </div>
                     </div>
                 </div>

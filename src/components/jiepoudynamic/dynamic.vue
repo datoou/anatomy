@@ -2,7 +2,7 @@
     <div class="jiepoudynamic">
         <div class="top">
             <img class="reveal-top"  src="http://res.vesal.site/newWebsiteImg/jiepoudongtai.png" style="width: 20vw;height: auto">
-            <a class="reveal-top" href="/home/dynamicMore" style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</a>
+            <router-link to="/home/dynamicMore" style="text-decoration: none;font-size: 1vw;color: #000;opacity: 0.9">查看更多</router-link>
         </div>
 
         <div class="dynamicContent">
