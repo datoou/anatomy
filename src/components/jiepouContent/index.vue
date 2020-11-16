@@ -82,7 +82,6 @@
                                             :src="Videoitem.video_url" controls
                                             :ref="dialogVideo"
                                             :poster="Videoitem.video_pic"
-
                                             width="100%"></video>
                                 </div>
 
@@ -194,6 +193,9 @@
 </script>
 
 <style lang="less" scoped>
+    video{
+        object-fit: fill;
+    }
     .Main {
         color: #333;
         text-align: center;
