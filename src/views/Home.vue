@@ -47,7 +47,7 @@
             <span>电话：029-68579950</span>
             <span>微信客服：15619045028</span>
             <div style="display: flex;flex-direction: row">
-              <span style="margin-right: 1vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 陕ICP备17006533号-1</span>
+              <span style="margin-right: 1vw">© 2017 -2020 西安维萨里数字科技有限责任公司 版权所有 <a href="http://www.beian.gov.cn/portal/index.do" style="color: #1292e4">陕ICP备17006533号-1</a></span>
               <span>维萨里官方微信客服</span>
             </div>
 
