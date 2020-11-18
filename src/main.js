@@ -8,9 +8,12 @@ import {
   Backtop, Popover, Row, Col, Card, Pagination, Divider, Form, FormItem, Input, Message
 } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
+
+import { Swipe, SwipeItem,Loading,Overlay,Field } from 'vant';
 // 引入动画样式
 import wow from 'wowjs'
 import 'wowjs/css/libs/animate.css'
+
 
 
 axios.defaults.baseURL = ''
@@ -45,6 +48,11 @@ Vue.use(FormItem)
 Vue.use(Input)
 
 
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Loading);
+Vue.use(Overlay);
+Vue.use(Field);
 new Vue({
   router,
   store,

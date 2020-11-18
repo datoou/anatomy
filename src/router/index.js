@@ -10,6 +10,8 @@ import aboutUs from "../components/aboutUs/aboutUs";
 import vesalService from "../views/VesalService";
 import partner from "../views/Partner";
 import dynamicMore from "../views/dynamicMore";
+import mHome from  '../views/mHome.vue';
+
 
 Vue.use(VueRouter)
 
@@ -17,6 +19,10 @@ const routes = [
     {
       path: '/',
       redirect: '/home'
+    },
+    {
+        path: '/m',
+        redirect: '/mHome'
     },
     {
       path: '/login',
@@ -61,6 +67,10 @@ const routes = [
             },
 
         ]
+    },
+    {
+        path: '/mHome',
+        component: mHome,
     }
 
 ]
