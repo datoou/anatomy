@@ -183,7 +183,7 @@
                           <span style="color: red;font-size: 4vw;">*</span>
                           <span style="color: #000;font-size: 4vw;margin-left: 1vw">姓名</span>
                           <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                              <input type="text" id="phone" name="fname" placeholder="请输入您的姓名" class="inputPhone" />
+                              <input v-model="fromdata.name" type="text" id="phone" name="fname" placeholder="请输入您的姓名" class="inputPhone" />
                           </div>
                       </div>
 <!--手机-->
@@ -191,15 +191,15 @@
                             <span style="color: red;font-size: 4vw;">*</span>
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">手机</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input type="text" id="phone" name="fname" placeholder="请输入你的手机号码" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.tell" type="text" id="phone" name="fname" placeholder="请输入你的手机号码" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 <!--行业-->
                         <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 3vw">
                             <span style="color: red;font-size: 4vw;">*</span>
-                            <span style="color: #000;font-size: 4vw;margin-left: 1vw">手机</span>
+                            <span style="color: #000;font-size: 4vw;margin-left: 1vw">住址</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input type="text" id="phone" name="fname" placeholder="请输入您的姓名" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.address" type="text" id="phone" name="fname" placeholder="请输入您的住址" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 <!--                        城市-->
@@ -207,14 +207,14 @@
                             <span style="color: red;font-size: 4vw;">*</span>
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">城市</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input type="text" id="phone" name="fname" placeholder="请输入你的行业/职业" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.city" type="text" id="phone" name="fname" placeholder="请输入您所在的城市（西安/武汉）" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 <!--组织-->
                         <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 3vw">
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">组织</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input type="text" id="phone" name="fname" placeholder="请输入你的组织名称" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.orgName" type="text" id="phone" name="fname" placeholder="请输入你的组织名称" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 
@@ -222,12 +222,12 @@
                         <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 3vw">
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">描述</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 15vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <textarea type="text" id="phone" name="fname" placeholder="补充 主营业务/规模大小等" class="inputPhone" maxlength="11" />
+                                <textarea v-model="fromdata.remark"  type="text" id="phone" name="fname" placeholder="补充 主营业务/规模大小等" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="text-align: center;background-color: #1292E4;z-index: 999;width: 300px;height: 40px;border-radius: 5px;margin-top: 5vw;align-items: center;display: flex" @click.stop>
+                <div style="text-align: center;background-color: #1292E4;z-index: 999;width: 300px;height: 40px;border-radius: 5px;margin-top: 5vw;align-items: center;display: flex" @click.stop="addPartner">
                     <p style="color: #fff;font-size: 4vw">申请成为合伙人</p>
                 </div>
             </div>
@@ -248,6 +248,8 @@
                 inputPartners:false,
                 swipeData:[],
                 appData: [],
+                fromdata: {
+                },
                 text: '',
             }
         },
@@ -295,7 +297,24 @@
                     }
                 })
 
-            }
+            },
+            addPartner () {
+                if (!(/^1[3456789]\d{9}$/.test(this.fromdata.tell))) {
+                    this.$message.error("请输入正确手机号码")
+                } else {
+                    this.$http({
+                        url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/webAddRecruiting',
+                        method: 'post',
+                        data:this.fromdata
+                    }).then(({data}) => {
+                        if (data && data.code === 0) {
+                            this.$message.success('success!')
+                        } else {
+                            this.$message.error('error!')
+                        }
+                    })
+                }
+            },
         }
     }
 </script>
