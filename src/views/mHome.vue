@@ -51,14 +51,14 @@
                                         {{item.app_details}}</p>
                                 </div>
                                 <div style="display: flex;flex-direction: row;justify-content:space-between;position: absolute;left: 18vw;right:18vw;bottom: 15vw;">
-                                    <div style="width: 29vw;">
+                                    <a style="width: 29vw;" :href="item.download_url">
                                         <img src="../components/mHome/img/AppleStore.png"
                                              style="width: 100%;height: 100%">
-                                    </div>
-                                    <div style="width: 29vw;">
+                                    </a>
+                                    <a style="width: 29vw;" :href="item.download_url">
                                         <img src="../components/mHome/img/AndroidStore.png"
                                              style="width: 100%;height: 100%">
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </van-swipe-item>
