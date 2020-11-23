@@ -14,27 +14,19 @@
                      style="width: 25px;height: 100%;padding-top: 20px;padding-right: 5%;z-index: 3"
                      @click="more()" v-if="showWhite == false"/>
 
-
                 <van-overlay :show="show" @click="show = false" z-index="2">
                     <div v-bind:style="{height:windowHeight,display:'flex',justifyContent:'center',alignItems:'center',backgroundColor:'#0D2637',opacity: 0.8 }"
                          @click="show = false">
                         <div style="text-align: center;line-height: 12vw" @click.stop>
-                            <p style="color: #FFFFFF;opacity: 1;font-size: 4.5vw;font-weight: bold;letter-spacing: 0.4vw">
-                                首页</p>
-                            <p style="color: #FFFFFF;opacity: 0.4;font-size: 4.5vw;font-weight: bold;letter-spacing: 0.4vw">
-                                产品介绍</p>
-                            <p style="color: #FFFFFF;opacity: 0.4;font-size: 4.5vw;font-weight: bold;letter-spacing: 0.4vw">
-                                解剖微课</p>
-                            <p style="color: #FFFFFF;opacity: 0.4;font-size: 4.5vw;font-weight: bold;letter-spacing: 0.4vw">
-                                用户服务</p>
-                            <p style="color: #FFFFFF;opacity: 0.4;font-size: 4.5vw;font-weight: bold;letter-spacing: 0.4vw">
-                                企业合作</p>
+                            <p v-bind:style="{color: '#FFFFFF',opacity: opacityMethod(item.navId),fontSize: '4vw',fontWeight: 'bold',letterSpacing: '0.4vw'}" v-for="(item,index) in this.navData" :key="index"
+                               @click="changeNav(item.navId)">
+                                {{item.navName}} </p>
                         </div>
                     </div>
                 </van-overlay>
             </div>
         </div>
-        <van-swipe v-bind:style="{height: windowHeight,}" vertical @change="swiperOnChange">
+        <van-swipe v-bind:style="{height: windowHeight,}" vertical @change="swiperOnChange" ref="swipeIndex">
             <van-swipe-item style="background-color: #0D1D2A">
                 <img src="../components/mHome/img/tuan.png"
                      style="width: 100%;height: 100%"/>
@@ -71,11 +63,11 @@
                             </div>
                         </van-swipe-item>
 
-                        <template #indicator>
-                            <div style="position: absolute;">
-                                {{ current + 1 }}/4
-                            </div>
-                        </template>
+<!--                        <template #indicator>-->
+<!--                            <div style="position: absolute;">-->
+<!--                                {{ current + 1 }}/4-->
+<!--                            </div>-->
+<!--                        </template>-->
                     </van-swipe>
                 </div>
 
@@ -85,7 +77,7 @@
                 <div v-bind:style="{width:'100%',height: windowHeight,}">
                     <img src="../components/mHome/img/Mlaoshi.png"
                          style="width: 100%;height: auto"/>
-                    <p style="text-align: center;color: #0F2C3F;font-size: 5.8vw;margin-top: 2.5vw;margin-bottom: 3vw;font-weight: 600">
+                    <p style="text-align: center;color: #0F2C3F;font-size: 20px;margin-top: 2.5vw;margin-bottom: 3vw;font-weight: 600">
                         解剖微课</p>
                     <van-swipe :autoplay="3000">
                         <van-swipe-item v-for="(item,index) in swipeData" :key="index">
@@ -137,7 +129,7 @@
             </van-swipe-item>
 
             <van-swipe-item>
-                <div style="width: 100%;height: 100%;display: flex;align-items: center">
+                <div style="width: 100%;height: 100%;display: flex;align-items: center;">
                     <div>
                         <img src="../components/mHome/img/fuwu.png"
                              style="width: 100%;height: auto;"/>
@@ -158,14 +150,14 @@
                 <div style="display: flex;flex-direction: row;margin-left: 3.5vw;margin-right: 3.5vw;margin-top: -10vw">
                     <div style="width: 100%">
                         <span style="font-size: 3.8vw;opacity: 0.9">联系我们</span><br>
-                        <span style="transform: scale(0.8);font-size:8px;opacity: 0.7;">工作地址:陕西省西安市长安区韦曲街办兴龙花园5幢312室。</span>
-                        <span style="transform: scale(0.8);font-size: 1vw;opacity: 0.7;">电话：029-68579950 微信客服：15619045028</span><br>
-                        <span style="font-size: 1vw;opacity: 0.7;">@2017 -2020 西安维萨里数字科技有限责任公司版权所有。</span>
-                        <a style="font-size: 1vw;opacity: 0.7;color: #2d9afa" href="http://www.beian.gov.cn/portal/index.do">陕ICP备17006533号-1</a>
+                        <span style="font-size:7px;opacity: 0.7;">工作地址:陕西省西安市长安区韦曲街办兴龙花园5幢312室。</span>
+                        <span style="font-size: 7px;opacity: 0.7;">电话：029-68579950 微信客服：15619045028</span><br>
+                        <span style="font-size: 7px;opacity: 0.7;">@2017 -2020 西安维萨里数字科技有限责任公司版权所有。</span>
+                        <a style="font-size: 7px;opacity: 0.7;color: #2d9afa" href="http://www.beian.gov.cn/portal/index.do">陕ICP备17006533号-1</a>
                     </div>
-                    <div style="display: flex;flex-direction: column;width: 45%;align-items: center;">
+                    <div style="display: flex;flex-direction: column;width: 45%;align-items: center;justify-content: flex-end">
                         <img src="../components/mHome/img/Merweima.png"
-                             style="width:24vw;height: 24vw"/>
+                             style="width:70px;height: 70px"/>
                         <span style="font-size: 2vw;opacity: 0.6;">维萨里官方微信客服</span>
                     </div>
                 </div>
@@ -183,7 +175,7 @@
                           <span style="color: red;font-size: 4vw;">*</span>
                           <span style="color: #000;font-size: 4vw;margin-left: 1vw">姓名</span>
                           <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                              <input v-model="fromdata.name" type="text" id="phone" name="fname" placeholder="请输入您的姓名" class="inputPhone" />
+                              <input v-model="fromdata.name" type="text"  name="fname" placeholder="请输入您的姓名" class="inputPhone" />
                           </div>
                       </div>
 <!--手机-->
@@ -199,7 +191,7 @@
                             <span style="color: red;font-size: 4vw;">*</span>
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">住址</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input v-model="fromdata.address" type="text" id="phone" name="fname" placeholder="请输入您的住址" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.address" type="text"  name="fname" placeholder="请输入您的住址" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 <!--                        城市-->
@@ -207,14 +199,14 @@
                             <span style="color: red;font-size: 4vw;">*</span>
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">城市</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input v-model="fromdata.city" type="text" id="phone" name="fname" placeholder="请输入您所在的城市（西安/武汉）" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.city" type="text"  name="fname" placeholder="请输入您所在的城市（西安/武汉）" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 <!--组织-->
                         <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 3vw">
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">组织</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 10vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <input v-model="fromdata.orgName" type="text" id="phone" name="fname" placeholder="请输入你的组织名称" class="inputPhone" maxlength="11" />
+                                <input v-model="fromdata.orgName" type="text" name="fname" placeholder="请输入你的组织名称" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
 
@@ -222,7 +214,7 @@
                         <div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 3vw">
                             <span style="color: #000;font-size: 4vw;margin-left: 1vw">描述</span>
                             <div style="border: solid 0 #EEEEEE;background-color: #EEEEEE;width: 187px;height: 15vw;align-items: center;display:flex;border-radius: 5px;margin-left: 2vw">
-                                <textarea v-model="fromdata.remark"  type="text" id="phone" name="fname" placeholder="补充 主营业务/规模大小等" class="inputPhone" maxlength="11" />
+                                <textarea v-model="fromdata.remark"  type="text"  name="fname" placeholder="补充 主营业务/规模大小等" class="inputPhone" maxlength="11" />
                             </div>
                         </div>
                     </div>
@@ -251,6 +243,26 @@
                 fromdata: {
                 },
                 text: '',
+                selectedIndex: '0',
+                navData:[
+                    {
+                        'navName':'首页',
+                        'navId':0,
+                    },{
+                        'navName':'产品介绍',
+                        'navId':1,
+                    },{
+                        'navName':'解剖微课',
+                        'navId':2,
+                    },{
+                        'navName':'用户服务',
+                        'navId': 3,
+                    },{
+                        'navName':'企业合作',
+                        'navId':4,
+                    }
+                ]
+
             }
         },
         created() {
@@ -260,6 +272,7 @@
         },
         methods: {
             swiperOnChange(index) {
+                this.selectedIndex = index
                 if (index == 3 || index == 4) {
                     this.showWhite = false
                 }else{
@@ -272,9 +285,21 @@
             showPartners(){
                 this.inputPartners = true;
             },
+            opacityMethod(id){
+                if(this.selectedIndex == id){
+                    return '1'
+                }else{
+                    return '0.4'
+                }
+
+            },
+            changeNav(index){
+                this.$refs.swipeIndex.swipeTo(index)
+                this.show = false
+            },
             getWKSwipe(){
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getMobileAppPic',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/getMobileAppPic',
                     method: 'get',
                 }).then(({data}) => {
                     if (data && data.code === 0) {
@@ -287,7 +312,7 @@
             },
             getAppData(){
                 this.$http({
-                    url: 'http://192.168.50.137:8003/vesal-jiepao-test/web/webapp/getMobileAppData',
+                    url: 'http://118.24.119.234:8003/vesal-jiepao-test/web/webapp/getMobileAppData',
                     method: 'get',
                 }).then(({data}) => {
                     if (data && data.code === 0) {
