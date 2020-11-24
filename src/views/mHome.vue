@@ -56,12 +56,12 @@
                                     <p style="color: #000000;opacity: 0.6;font-weight: 500;display: block;margin-top: 2vw;line-height: 6vw;font-size: 3.2vw;text-align:justify;">
                                         {{item.app_details}}</p>
                                 </div>
-                                <div style="display: flex;flex-direction: row;justify-content:space-between;position: absolute;left: 18vw;right:18vw;bottom: 15vw;">
-                                    <a style="width: 29vw;" :href="item.download_url">
+                                <div style="display: flex;flex-direction: row;justify-content:space-between;position: absolute;left: 21vw;right:21vw;bottom: 15vw;">
+                                    <a style="width: 25vw;height: auto" :href="item.download_url">
                                         <img src="../components/mHome/img/AppleStore.png"
                                              style="width: 100%;height: 100%">
                                     </a>
-                                    <a style="width: 29vw;" :href="item.download_url">
+                                    <a style="width: 25vw;height: auto" :href="item.download_url">
                                         <img src="../components/mHome/img/AndroidStore.png"
                                              style="width: 100%;height: 100%">
                                     </a>
@@ -246,6 +246,7 @@
                 inputPartners:false,
                 swipeData:[],
                 appData: [],
+                tempIndex: '',
                 fromdata: {
                 },
                 text: '',
@@ -280,13 +281,19 @@
             swiperOnChange(index) {
                 this.selectedIndex = index
                 if (index == 3 || index == 4) {
-                    this.showWhite = false
+                    this.showWhite = false;
+                    this.tempIndex = index
                 }else{
                     this.showWhite = true
                 }
             },
             more() {
-                this.show = true;
+                if(this.tempIndex == 3 || this.tempIndex ==4){
+                    this.show = true;
+                    this.showWhite = true
+                }else{
+                    this.show = true;
+                }
             },
             showPartners(){
                 this.inputPartners = true;
