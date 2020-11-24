@@ -3,10 +3,16 @@
         <!--                顶部导航切换-->
         <div v-bind:style="{position: 'absolute',left: 0,top: 0,right:0,}">
             <div v-bind:style="{display: 'flex',justifyContent:'space-between'}">
-                <img src="../components/mHome/img/MVesalLogo.png"
-                     style="width: 80px;height: 100%;padding-top: 20px;padding-left: 5%;z-index: 3" v-if="showWhite == true"/>
-                <img src="../components/mHome/img/MVesalLogo2.png"
-                     style="width: 80px;height: 100%;padding-top: 20px;padding-left: 5%;z-index: 3" v-if="showWhite == false"/>
+                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == true">
+                    <img src="../components/mHome/img/MVesalLogo.png"
+                         style="width: 100%;height: auto;padding-top: 20px;" />
+                </div>
+
+                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == false">
+                    <img src="../components/mHome/img/MVesalLogo2.png"
+                         style="width: 100%;height: auto;padding-top: 20px;" />
+                </div>
+
                 <img src="../components/mHome/img/more.png"
                      style="width: 25px;height: 100%;padding-top: 20px;padding-right: 5%;z-index: 3"
                      @click="more()" v-if="showWhite == true"/>
@@ -26,7 +32,7 @@
                 </van-overlay>
             </div>
         </div>
-        <van-swipe v-bind:style="{height: windowHeight,}" vertical @change="swiperOnChange" ref="swipeIndex">
+        <van-swipe v-bind:style="{height: windowHeight,}" vertical @change="swiperOnChange" ref="swipeIndex" indicator-color="#1292E4">
             <van-swipe-item style="background-color: #0D1D2A">
                 <img src="../components/mHome/img/tuan.png"
                      style="width: 100%;height: 100%"/>
@@ -34,7 +40,7 @@
 
             <van-swipe-item>
                 <div>
-                    <van-swipe>
+                    <van-swipe indicator-color="#1292E4">
                         <van-swipe-item v-for="(item,index) in appData" :key="index">
                             <!--                            产品介绍轮播图-->
                             <div v-bind:style="{width:'100%',height: windowHeight,}">
@@ -79,7 +85,7 @@
                          style="width: 100%;height: auto"/>
                     <p style="text-align: center;color: #0F2C3F;font-size: 20px;margin-top: 2.5vw;margin-bottom: 3vw;font-weight: 600">
                         解剖微课</p>
-                    <van-swipe :autoplay="3000">
+                    <van-swipe :autoplay="3000" indicator-color="#1292E4">
                         <van-swipe-item v-for="(item,index) in swipeData" :key="index">
                             <img :src="item.mobile_pic_url"
                                  style="width: 92%;height: auto;margin-left: 4%"/>
@@ -143,7 +149,7 @@
                 </div>
                 <img src="../components/mHome/img/Mjieshao.png" style="width: 100%;height: auto;padding-top: 15.5vw"/>
                 <div style="position: relative;left:0;bottom: 70px;">
-                    <div style="display: flex;width: 100%;justify-content: center" @click="showPartners()" >
+                    <div style="display: flex;justify-content: center;width: 100%;align-items: center" @click="showPartners()" >
                         <img src="../components/mHome/img/Mqiyehezuo.png" style="width: 40vw;height: auto;"/>
                     </div>
                 </div>
@@ -386,5 +392,14 @@
         background-color: #fff;
     }
 
+.van-swipe__indicator{
+    background-color: #000;
+    width: 8px;
+    height: 8px;
+}
+    .van-swipe__indicators--vertical{
+        right:12px;
+        left: 96%;
+    }
 
 </style>
