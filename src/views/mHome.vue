@@ -3,26 +3,26 @@
         <!--                顶部导航切换-->
         <div v-bind:style="{position: 'absolute',left: 0,top: 0,right:0,}">
             <div v-bind:style="{display: 'flex',justifyContent:'space-between'}">
-                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == true">
-                    <img src="../components/mHome/img/MVesalLogo.png"
+                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == true" @click="goHome()" >
+                    <img src="http://res.vesal.site/newWebsiteImg/MVesalLogo.png"
                          style="width: 100%;height: auto;padding-top: 20px;" />
                 </div>
 
-                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == false">
-                    <img src="../components/mHome/img/MVesalLogo2.png"
+                <div style="width: 80px;z-index: 3;padding-left: 5%;" v-if="showWhite == false" @click="goHome()">
+                    <img src="http://res.vesal.site/newWebsiteImg/MVesalLogo2.png"
                          style="width: 100%;height: auto;padding-top: 20px;" />
                 </div>
 
-                <img src="../components/mHome/img/more.png"
+                <img src="http://res.vesal.site/newWebsiteImg/more.png"
                      style="width: 25px;height: 100%;padding-top: 20px;padding-right: 5%;z-index: 3"
                      @click="more()" v-if="showWhite == true"/>
-                <img src="../components/mHome/img/more2.png"
+                <img src="http://res.vesal.site/newWebsiteImg/more2.png"
                      style="width: 25px;height: 100%;padding-top: 20px;padding-right: 5%;z-index: 3"
                      @click="more()" v-if="showWhite == false"/>
 
-                <van-overlay :show="show" @click="show = false" z-index="2">
+                <van-overlay :show="show" @click="blankSpace()" z-index="2">
                     <div v-bind:style="{height:windowHeight,display:'flex',justifyContent:'center',alignItems:'center',backgroundColor:'#0D2637',opacity: 0.8 }"
-                         @click="show = false">
+                         @click="blankSpace()">
                         <div style="text-align: center;line-height: 12vw" @click.stop>
                             <p v-bind:style="{color: '#FFFFFF',opacity: opacityMethod(item.navId),fontSize: '4vw',fontWeight: 'bold',letterSpacing: '0.4vw'}" v-for="(item,index) in this.navData" :key="index"
                                @click="changeNav(item.navId)">
@@ -33,9 +33,10 @@
             </div>
         </div>
         <van-swipe v-bind:style="{height: windowHeight,}" vertical @change="swiperOnChange" ref="swipeIndex" indicator-color="#1292E4">
-            <van-swipe-item style="background-color: #0D1D2A">
-                <img src="../components/mHome/img/tuan.png"
-                     style="width: 100%;height: 100%"/>
+            <van-swipe-item style="background-color: #0D1D2A;overflow-y: auto">
+
+                <img src="http://res.vesal.site/newWebsiteImg/tuan.png"
+                     style="width: 100%;height:auto"/>
             </van-swipe-item>
 
             <van-swipe-item>
@@ -44,25 +45,25 @@
                         <van-swipe-item v-for="(item,index) in appData" :key="index">
                             <!--                            产品介绍轮播图-->
                             <div v-bind:style="{width:'100%',height: windowHeight,}">
-                                <div style="height: 74vw;">
+                                <div style="height: 72vw;">
                                     <img :src="item.app_pic_url"
                                          style="width: 100%;height: auto"/>
                                 </div>
                                 <div style="padding-left: 4vw;padding-right: 9.5vw;">
-                                    <p style="color: #000000;font-size: 4.5vw;font-weight: 600;opacity: 0.9;letter-spacing: 0.4vw;margin-top: 2vw">
+                                    <p style="color: #000000;font-size: 4.5vw;font-weight: 600;opacity: 0.9;letter-spacing: 0.4vw;margin-top: 10px">
                                         {{item.app_name}}</p>
-                                    <p style="color: #000000;font-size: 3.5vw;font-weight: 500;opacity: 0.9;margin-top: 3vw">
+                                    <p style="color: #000000;font-size: 3.5vw;font-weight: 500;opacity: 0.9;margin-top: 8px">
                                         {{item.app_introduction}}</p>
-                                    <p style="color: #000000;opacity: 0.6;font-weight: 500;display: block;margin-top: 2vw;line-height: 6vw;font-size: 3.2vw;text-align:justify;">
+                                    <p style="color: #000000;opacity: 0.6;font-weight: 500;display: block;margin-top: 8px;line-height: 6vw;font-size: 3vw;text-align:justify;">
                                         {{item.app_details}}</p>
                                 </div>
-                                <div style="display: flex;flex-direction: row;justify-content:space-between;position: absolute;left: 21vw;right:21vw;bottom: 15vw;">
-                                    <a style="width: 25vw;height: auto" :href="item.download_url">
-                                        <img src="../components/mHome/img/AppleStore.png"
+                                <div style="display: flex;flex-direction: row;justify-content:space-between;position: absolute;left: 20vw;right:20vw;bottom: 10vw;">
+                                    <a style="width: 27.3vw;height: 8.7vw" :href="item.download_url">
+                                        <img src="http://res.vesal.site/newWebsiteImg/AppleStore.png"
                                              style="width: 100%;height: 100%">
                                     </a>
-                                    <a style="width: 25vw;height: auto" :href="item.download_url">
-                                        <img src="../components/mHome/img/AndroidStore.png"
+                                    <a style="width: 27.3vw;height: 8.7vw" :href="item.download_url">
+                                        <img src="http://res.vesal.site/newWebsiteImg/AndroidStore.png"
                                              style="width: 100%;height: 100%">
                                     </a>
                                 </div>
@@ -80,12 +81,12 @@
             </van-swipe-item>
 
             <van-swipe-item>
-                <div v-bind:style="{width:'100%',height: windowHeight,}">
-                    <img src="../components/mHome/img/Mlaoshi.png"
-                         style="width: 100%;height: auto"/>
+                <div v-bind:style="{width:'100%',height: windowHeight,overflowY:'auto'}">
+                    <img src="http://res.vesal.site/newWebsiteImg/Mlaoshi.png"
+                         style="width: 100vw;height: auto"/>
                     <p style="text-align: center;color: #0F2C3F;font-size: 20px;margin-top: 2.5vw;margin-bottom: 3vw;font-weight: 600">
                         解剖微课</p>
-                    <van-swipe :autoplay="3000" indicator-color="#1292E4">
+                    <van-swipe :autoplay="3000" indicator-color="#1292E4" class="WK">
                         <van-swipe-item v-for="(item,index) in swipeData" :key="index">
                             <img :src="item.mobile_pic_url"
                                  style="width: 92%;height: auto;margin-left: 4%"/>
@@ -101,7 +102,7 @@
                     <div style="display: flex;flex-direction: row;padding-left: 4vw;padding-right: 4vw;padding-top: 6vw">
                         <div style="margin-right: 7vw;align-items: center;display: flex;flex-direction: column">
                             <div style="width: 8vw;">
-                                <img src="../components/mHome/img/mingshijiangjie.png"
+                                <img src="http://res.vesal.site/newWebsiteImg/mingshijiangjie.png"
                                      style="width: 100%;height: auto"/>
                             </div>
                             <p style="font-size: 3.2vw;margin-top: 2vw;font-weight: 500;color: #000">名师讲解</p>
@@ -109,7 +110,7 @@
 
                         <div style="margin-right: 7vw;align-items: center;display: flex;flex-direction: column">
                             <div style="width: 8vw;">
-                                <img src="../components/mHome/img/zhenrenmote.png"
+                                <img src="http://res.vesal.site/newWebsiteImg/zhenrenmote.png"
                                      style="width: 100%;height: auto"/>
                             </div>
                             <p style="font-size: 3.2vw;margin-top: 2vw;font-weight: 500;color: #000">真人模特</p>
@@ -117,14 +118,14 @@
 
                         <div style="margin-right: 7vw;align-items: center;display: flex;flex-direction: column">
                             <div style="width: 8vw;">
-                                <img src="../components/mHome/img/yinanfuzhu.png"
+                                <img src="http://res.vesal.site/newWebsiteImg/yinanfuzhu.png"
                                      style="width: 100%;height: auto"/>
                             </div>
                             <p style="font-size: 3.2vw;margin-top: 2vw;font-weight: 500;color: #000">疑难辅助</p>
                         </div>
                         <div style="margin-right: 7vw;align-items: center;display: flex;flex-direction: column">
                             <div style="width: 8vw;">
-                                <img src="../components/mHome/img/hangyejiaoliu.png"
+                                <img src="http://res.vesal.site/newWebsiteImg/hangyejiaoliu.png"
                                      style="width: 100%;height: auto"/>
                             </div>
                             <p style="font-size: 3.2vw;margin-top: 2vw;font-weight: 500;color: #000">行业交流</p>
@@ -136,35 +137,36 @@
 
             <van-swipe-item>
                 <div style="width: 100%;height: 100%;display: flex;align-items: center;">
-                    <div>
+                    <div style="height: 100%;overflow-y: auto;">
                         <img src="../components/mHome/img/fuwu.png"
                              style="width: 100%;height: auto;"/>
                     </div>
                 </div>
             </van-swipe-item>
 
-            <van-swipe-item>
+            <van-swipe-item style="overflow-y: auto;">
                 <div style="position: absolute;z-index: -999">
-                    <img src="../components/mHome/img/Mguanyudi.png" style="width: 100%;height: auto">
+                    <img src="http://res.vesal.site/newWebsiteImg/Mguanyudi.png" style="width: 100%;height: auto">
                 </div>
-                <img src="../components/mHome/img/Mjieshao.png" style="width: 100%;height: auto;padding-top: 15.5vw"/>
+                <img src="http://res.vesal.site/newWebsiteImg/Mjieshao.png" style="width: 100%;height: auto;padding-top: 15.5vw"/>
                 <div style="position: relative;left:0;bottom: 70px;">
                     <div style="display: flex;justify-content: center;width: 100%;align-items: center" @click="showPartners()" >
-                        <img src="../components/mHome/img/Mqiyehezuo.png" style="width: 40vw;height: auto;"/>
+                        <img src="http://res.vesal.site/newWebsiteImg/Mqiyehezuo.png" style="width: 40vw;height: auto;"/>
                     </div>
                 </div>
                 <div style="display: flex;flex-direction: row;margin-left: 3.5vw;margin-right: 3.5vw;margin-top: -10vw">
                     <div style="width: 100%">
-                        <span style="font-size: 3.8vw;opacity: 0.9">联系我们</span><br>
-                        <span style="font-size:7px;opacity: 0.7;">工作地址:陕西省西安市长安区韦曲街办兴龙花园5幢312室。</span>
-                        <span style="font-size: 7px;opacity: 0.7;">电话：029-68579950 微信客服：15619045028</span><br>
-                        <span style="font-size: 7px;opacity: 0.7;">@2017 -2020 西安维萨里数字科技有限责任公司版权所有。</span>
-                        <a style="font-size: 7px;opacity: 0.7;color: #2d9afa" href="http://www.beian.gov.cn/portal/index.do">陕ICP备17006533号-1</a>
+                        <span style="font-size: 2.8vw;opacity: 0.9">联系我们</span><br>
+                        <span style="font-size: 10px;opacity: 0.7;">工作地址:陕西省西安市长安区韦曲街办兴龙花园5幢312室。</span><br>
+                        <span style="font-size: 10px;opacity: 0.7;">电话：029-68579950 微信客服：15619045028</span><br>
+                        <span style="font-size: 10px;opacity: 0.7;">@2017 -2020 西安维萨里数字科技有限责任公司版权所有。</span><br>
+                        <a style="font-size: 10px;opacity: 0.7;color: #2d9afa" href="http://www.beian.gov.cn/portal/index.do">陕ICP备17006533号-1</a>
                     </div>
-                    <div style="display: flex;flex-direction: column;width: 45%;align-items: center;justify-content: flex-end">
-                        <img src="../components/mHome/img/Merweima.png"
+                    <div style="display: flex;flex-direction: column;width: 25%;align-items: center;justify-content: flex-end;">
+                        <img src="http://res.vesal.site/newWebsiteImg/Merweima.png"
                              style="width:70px;height: 70px"/>
-                        <span style="font-size: 2vw;opacity: 0.6;">维萨里官方微信客服</span>
+                        <span style="font-size: 2vw;opacity: 0.6;">维萨里官方</span>
+                            <span style="font-size: 2vw;opacity: 0.6;">微信客服</span>
                     </div>
                 </div>
             </van-swipe-item>
@@ -278,21 +280,39 @@
 
         },
         methods: {
-            swiperOnChange(index) {
-                this.selectedIndex = index
-                if (index == 3 || index == 4) {
-                    this.showWhite = false;
-                    this.tempIndex = index
+
+            isWhite(){
+                if(this.tempIndex == 3 || this.tempIndex ==4){
+                    this.showWhite = false
                 }else{
                     this.showWhite = true
                 }
             },
-            more() {
-                if(this.tempIndex == 3 || this.tempIndex ==4){
-                    this.show = true;
-                    this.showWhite = true
+
+            swiperOnChange(index) {
+                this.selectedIndex = index
+                this.tempIndex = index
+                if (index == 3 || index == 4) {
+                    this.showWhite = false;
                 }else{
-                    this.show = true;
+                    this.showWhite = true
+                }
+            },
+            blankSpace(){
+                this.show = false
+                this.isWhite()
+            },
+            more(){
+                if(this.show){
+                    this.show = false
+                    this.isWhite()
+                }else{
+                    if(this.tempIndex == 3 || this.tempIndex ==4){
+                        this.show = true;
+                        this.showWhite = true
+                    }else{
+                        this.show = true;
+                    }
                 }
             },
             showPartners(){
@@ -305,6 +325,10 @@
                     return '0.4'
                 }
 
+            },
+            goHome(){
+              this.$refs.swipeIndex.swipeTo('0')
+                this.show = false
             },
             changeNav(index){
                 this.$refs.swipeIndex.swipeTo(index)
@@ -400,13 +424,20 @@
     }
 
 .van-swipe__indicator{
-    background-color: #000;
+    background-color: #CCCCCC;
     width: 8px;
     height: 8px;
 }
     .van-swipe__indicators--vertical{
         right:12px;
-        left: 96%;
+        left: 97%;
+    }
+    .WK .van-swipe__indicators{
+     bottom: 0px;
+        margin-top: 10px;
+    }
+    .WK .van-swipe-item{
+        height: 35vw;
     }
 
 </style>
